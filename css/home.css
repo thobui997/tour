@@ -1,0 +1,38 @@
+#hero {
+  background-image: url(../images/setdeparture-banner-duoi2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.hero__content h1,
+.hero__content h2 {
+  color: var(--light-text-color);
+  text-shadow: 0 0 20px #000;
+  text-align: center;
+}
+
+.hero__content h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: 0.8px;
+}
+
+.hero__content h2 {
+  font-size: 18px;
+}
+
+.hero__hotline {
+  bottom: 13px;
+  right: 0;
+}
+
+.hero__text i {
+  color: var(--primary-color);
+}
+
+.hero__text a {
+  color: #2f2f2f;
+  font-weight: 500;
+}

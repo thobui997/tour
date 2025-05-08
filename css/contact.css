@@ -1,0 +1,215 @@
+/*--------------------------------------------------------------
+# Contact Info Section
+--------------------------------------------------------------*/
+.contact-info {
+	padding: 60px 0;
+}
+
+.info-box {
+	color: var(--text-color);
+	text-align: center;
+	box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+	padding: 30px 0 40px 0;
+	height: 100%;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.info-box i {
+	font-size: 32px;
+	color: var(--secondary-color);
+	border-radius: 50%;
+	padding: 8px;
+	border: 2px solid var(--secondary-color);
+}
+
+.info-box h3 {
+	font-size: 20px;
+	color: var(--primary-color);
+	font-weight: 700;
+	margin: 20px 0 10px 0;
+}
+
+.info-box p {
+	padding: 0;
+	line-height: 24px;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Contact Form Section
+--------------------------------------------------------------*/
+.contact-form {
+	padding: 60px 0;
+}
+
+.contact-form .php-email-form {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.contact-form .php-email-form .form-group {
+	padding-bottom: 8px;
+}
+
+.contact-form .php-email-form .error-message {
+	display: none;
+	color: #fff;
+	background: #ed3c0d;
+	text-align: left;
+	padding: 15px;
+	font-weight: 600;
+}
+
+.contact-form .php-email-form .error-message br + br {
+	margin-top: 25px;
+}
+
+.contact-form .php-email-form .sent-message {
+	display: none;
+	color: #fff;
+	background: #18d26e;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+}
+
+.contact-form .php-email-form .loading {
+	display: none;
+	background: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+.contact-form .php-email-form .loading:before {
+	content: "";
+	display: inline-block;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	margin: 0 10px -6px 0;
+	border: 3px solid #18d26e;
+	border-top-color: #eee;
+	animation: animate-loading 1s linear infinite;
+}
+
+.contact-form .php-email-form input,
+.contact-form .php-email-form textarea,
+.contact-form .php-email-form select {
+	border-radius: 5px;
+	box-shadow: none;
+	font-size: 14px;
+}
+
+.contact-form .php-email-form input:focus,
+.contact-form .php-email-form textarea:focus,
+.contact-form .php-email-form select:focus {
+	border-color: var(--secondary-color);
+}
+
+.contact-form .php-email-form textarea {
+	padding: 12px 15px;
+}
+
+.contact-form .php-email-form button[type="submit"] {
+	background: var(--primary-color);
+	border: 0;
+	padding: 10px 24px;
+	color: #fff;
+	transition: 0.4s;
+	border-radius: 50px;
+	font-weight: 600;
+}
+
+.contact-form .php-email-form button[type="submit"]:hover {
+	background: var(--secondary-color);
+}
+
+@keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*--------------------------------------------------------------
+# Contact Content
+--------------------------------------------------------------*/
+.contact-content {
+	padding: 30px;
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 10px;
+}
+
+.contact-content h3 {
+	font-weight: 700;
+	font-size: 26px;
+	color: var(--primary-color);
+	margin-bottom: 20px;
+}
+
+.contact-content p {
+	margin-bottom: 20px;
+}
+
+.contact-content ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-content ul li {
+	position: relative;
+	padding-left: 28px;
+	margin-bottom: 10px;
+}
+
+.contact-content ul i {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	font-size: 20px;
+	color: var(--secondary-color);
+}
+
+.contact-content .social-links {
+	margin-top: 30px;
+}
+
+.contact-content .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: var(--primary-color);
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+}
+
+.contact-content .social-links a:hover {
+	background: var(--secondary-color);
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Map Section
+--------------------------------------------------------------*/
+.map {
+	margin-bottom: -6px;
+}
+
+.map iframe {
+	width: 100%;
+	height: 400px;
+}
