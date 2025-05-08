@@ -162,4 +162,8 @@
   .introduce__item::after {
     display: none;
   }
+
+  .home__shop-content h2 {
+    font-size: 40px;
+  }
 }
