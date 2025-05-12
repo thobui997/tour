@@ -1,295 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuxTravel DMC | Luxury Travel Experiences</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-    />
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/home.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="header">
-      <div class="header__top">
-        <div class="header__top-content">
-          <div class="left">
-            <a href="#" class="header__btn-menu d-lg-none">
-              <i class="bi bi-list"></i>
-            </a>
-            <div class="d-none d-lg-block">
-              <ul
-                class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
-              >
-                <li>
-                  <i class="bi bi-envelope"></i>
-                  <a href="mailto:test@gmail.com">test@gmail.com</a>
-                </li>
-                <li>
-                  <i class="bi bi-telephone-fill"></i>
-                  <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LuxTravel DMC | Luxury Travel Experiences</title>
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+		/>
+		<!-- AOS Animation Library -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- Swiper CSS for Testimonial Carousel -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/home.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<div class="header__top">
+				<div class="header__top-content">
+					<div class="left">
+						<a href="#" class="header__btn-menu d-lg-none">
+							<i class="bi bi-list"></i>
+						</a>
+						<div class="d-none d-lg-block">
+							<ul
+								class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
+							>
+								<li>
+									<i class="bi bi-envelope"></i>
+									<a href="mailto:test@gmail.com">test@gmail.com</a>
+								</li>
+								<li>
+									<i class="bi bi-telephone-fill"></i>
+									<a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-          <div class="mid">LOGO</div>
+					<div class="mid">LOGO</div>
 
-          <div class="right">
-            <a href="#" class="header__btn-search d-lg-none">
-              <i class="bi bi-search"></i>
-            </a>
+					<div class="right">
+						<a href="#" class="header__btn-search d-lg-none">
+							<i class="bi bi-search"></i>
+						</a>
 
-            <div class="d-none d-lg-block">
-              <a href="#" class="btn-booking">BOOKING NOW</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__bot d-none d-lg-block">
-        <div class="container">
-          <nav class="d-flex justify-content-center align-items-center">
-            <ul
-              class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
-            >
-              <li><a href="index.html" class="active">HOME</a></li>
-              <li><a href="#">PACKAGES</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">CONTACT US</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+						<div class="d-none d-lg-block">
+							<a href="#" class="btn-booking">BOOKING NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bot d-none d-lg-block">
+				<div class="container">
+					<nav class="d-flex justify-content-center align-items-center">
+						<ul
+							class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
+						>
+							<li><a href="index.html" class="active">HOME</a></li>
+							<li><a href="#">PACKAGES</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">ABOUT US</a></li>
+							<li><a href="#">CONTACT US</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="position-relative">
-      <div
-        class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
-      >
-        <h2>Luxury Tailor-Made Tours to</h2>
-        <h1>Southeast Asia</h1>
-        <!-- TODO: DO LATER IN FUTURE -->
-        <div class="d-none d-lg-block">form</div>
-      </div>
-      <div class="d-lg-none position-absolute hero__hotline">
-        <div class="d-flex gap-5 align-items-center">
-          <div class="hero__text">
-            <i class="bi bi-telephone-fill"></i>
-            <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
-          </div>
+		<!-- Hero Section -->
+		<section id="hero" class="position-relative">
+			<div
+				class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
+			>
+				<h2>Luxury Tailor-Made Tours to</h2>
+				<h1>Southeast Asia</h1>
+				<!-- TODO: DO LATER IN FUTURE -->
+				<div class="d-none d-lg-block">form</div>
+			</div>
+			<div class="d-lg-none position-absolute hero__hotline">
+				<div class="d-flex gap-5 align-items-center">
+					<div class="hero__text">
+						<i class="bi bi-telephone-fill"></i>
+						<a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+					</div>
 
-          <div>
-            <a href="#" class="btn-booking">BOOKING NOW</a>
-          </div>
-        </div>
-      </div>
-    </section>
+					<div>
+						<a href="#" class="btn-booking">BOOKING NOW</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- main -->
-    <main id="main">
-      <!-- introduce -->
-      <section class="introduce">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-4">
-              <div class="introduce__item position-relative">
-                <h2>100% Tailor-made</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
-                  labore magnam sint sapiente excepturi? Voluptates,
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="introduce__item position-relative has-border">
-                <h2>Local Expects</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
-                  labore magnam sint sapiente excepturi? Voluptates,
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="introduce__item position-relative has-border">
-                <h2>Sustainable Travel</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
-                  labore magnam sint sapiente excepturi? Voluptates,
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+		<!-- main -->
+		<main id="main">
+			<!-- introduce -->
+			<section class="introduce">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-4">
+							<div class="introduce__item position-relative">
+								<h2>100% Tailor-made</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+									labore magnam sint sapiente excepturi? Voluptates,
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4">
+							<div class="introduce__item position-relative has-border">
+								<h2>Local Expects</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+									labore magnam sint sapiente excepturi? Voluptates,
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4">
+							<div class="introduce__item position-relative has-border">
+								<h2>Sustainable Travel</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+									labore magnam sint sapiente excepturi? Voluptates,
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- home about -->
-      <section class="home__about">
-        <div class="container">
-          <div class="home__about-content">
-            <h2>We offer luxury private tours to Southeast Asia</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              atque, corporis explicabo maxime cumque quis, aliquam ipsam
-              recusandae incidunt ullam reprehenderit eos placeat temporibus
-              quia exercitationem esse qui vero tenetur? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Molestiae sequi nam nisi magni
-              amet porro. Laboriosam unde animi minima odio aspernatur explicabo
-              nemo repellendus maxime quos dolores, fugit non in?
-            </p>
-            <a href="#" class="home__about-btn">VIEW DETAILS</a>
-          </div>
-        </div>
-      </section>
+			<!-- home about -->
+			<section class="home__about">
+				<div class="container">
+					<div class="home__about-content">
+						<h2>We offer luxury private tours to Southeast Asia</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+							atque, corporis explicabo maxime cumque quis, aliquam ipsam
+							recusandae incidunt ullam reprehenderit eos placeat temporibus
+							quia exercitationem esse qui vero tenetur? Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Molestiae sequi nam nisi magni
+							amet porro. Laboriosam unde animi minima odio aspernatur explicabo
+							nemo repellendus maxime quos dolores, fugit non in?
+						</p>
+						<a href="#" class="home__about-btn">VIEW DETAILS</a>
+					</div>
+				</div>
+			</section>
 
-      <!-- home shop -->
-      <section class="home__shop">
-        <div class="container-fluid">
-          <div class="home__shop-content">
-            <h2>
-              2025-2026 Innovative, Authentic, Unique and Immersive Travel
-              Experiences Now Available
-            </h2>
+			<!-- home shop -->
+			<section class="home__shop">
+				<div class="container-fluid">
+					<div class="home__shop-content">
+						<h2>
+							2025-2026 Innovative, Authentic, Unique and Immersive Travel
+							Experiences Now Available
+						</h2>
 
-            <div class="home__shop-list"></div>
-          </div>
-        </div>
-      </section>
-    </main>
+						<div class="home__shop-list">
+							<div class="home-shop-item">
+								<div class="home-shop-item__img">
+									<a href="#">
+										<img
+											src="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+											alt=""
+										/>
+									</a>
+								</div>
+								<div class="home-shop-item__brief">
+									<div class="date">14 Days</div>
+									<h3 class="title">
+										<a href="#"
+											>Experience A Blissful Journey At Bai San Ho 5 days</a
+										>
+									</h3>
+									<p class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+										labore magnam sint sapiente excepturi? Voluptates,
+									</p>
+								</div>
+							</div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>LuxTravel DMC</h3>
-              <p>
-                1234 Luxury Avenue <br />
-                Suite 500<br />
-                New York, NY 10001 <br />
-                United States <br /><br />
-                <strong>Phone:</strong> +1 (555) 123-4567<br />
-                <strong>Email:</strong> info@luxtraveldmc.com<br />
-              </p>
-            </div>
+							<div class="home-shop-item">
+								<div class="home-shop-item__img">
+									<a href="#">
+										<img
+											src="https://images.unsplash.com/photo-1746990263194-0e2826fed608?q=80&w=2344&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+											alt=""
+										/>
+									</a>
+								</div>
+								<div class="home-shop-item__brief">
+									<div class="date">14 Days</div>
+									<h3 class="title">
+										<a href="#"
+											>Experience A Blissful Journey At Bai San Ho 5 days</a
+										>
+									</h3>
+									<p class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+										labore magnam sint sapiente excepturi? Voluptates,
+									</p>
+								</div>
+							</div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="about.html">About us</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="services.html">Services</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>
+							<div class="home-shop-item">
+								<div class="home-shop-item__img">
+									<a href="#">
+										<img
+											src="https://images.unsplash.com/photo-1743660622191-81431f288648?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+											alt=""
+										/>
+									</a>
+								</div>
+								<div class="home-shop-item__brief">
+									<div class="date">14 Days</div>
+									<h3 class="title">
+										<a href="#"
+											>Experience A Blissful Journey At Bai San Ho 5 days</a
+										>
+									</h3>
+									<p class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+										labore magnam sint sapiente excepturi? Voluptates,
+									</p>
+								</div>
+							</div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="services.html#bespoke">Bespoke Itineraries</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="services.html#accommodations"
-                    >Luxury Accommodations</a
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="services.html#experiences">VIP Experiences</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="services.html#transportation"
-                    >Transportation Services</a
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="services.html#concierge">24/7 Concierge</a>
-                </li>
-              </ul>
-            </div>
+							<div class="home-shop-item">
+								<div class="home-shop-item__img">
+									<a href="#">
+										<img
+											src="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+											alt=""
+										/>
+									</a>
+								</div>
+								<div class="home-shop-item__brief">
+									<div class="date">14 Days</div>
+									<h3 class="title">
+										<a href="#"
+											>Experience A Blissful Journey At Bai San Ho 5 days</a
+										>
+									</h3>
+									<p class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+										labore magnam sint sapiente excepturi? Voluptates,
+									</p>
+								</div>
+							</div>
 
-            <div class="col-lg-3 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-              <p>
-                Subscribe to receive exclusive offers and travel inspiration
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" placeholder="Your email" />
-                <input type="submit" value="Subscribe" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+							<div class="home-shop-item">
+								<div class="home-shop-item__img">
+									<a href="#">
+										<img
+											src="https://images.unsplash.com/photo-1745117735516-a64ecb60fd93?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+											alt=""
+										/>
+									</a>
+								</div>
+								<div class="home-shop-item__brief">
+									<div class="date">14 Days</div>
+									<h3 class="title">
+										<a href="#"
+											>Experience A Blissful Journey At Bai San Ho 5 days</a
+										>
+									</h3>
+									<p class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Possimus ex nobis dolorem explicabo beatae, cupiditate ipsa,
+										labore magnam sint sapiente excepturi? Voluptates,
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-      <div class="container d-md-flex py-4">
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-            &copy; <span id="current-year"></span>
-            <strong><span>LuxTravel DMC</span></strong
-            >. All Rights Reserved
-          </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </footer>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 footer-contact">
+							<h3>LuxTravel DMC</h3>
+							<p>
+								1234 Luxury Avenue <br />
+								Suite 500<br />
+								New York, NY 10001 <br />
+								United States <br /><br />
+								<strong>Phone:</strong> +1 (555) 123-4567<br />
+								<strong>Email:</strong> info@luxtraveldmc.com<br />
+							</p>
+						</div>
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="about.html">About us</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html">Services</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#">Terms of service</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#">Privacy policy</a>
+								</li>
+							</ul>
+						</div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS for Testimonial Carousel -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
-  </body>
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Our Services</h4>
+							<ul>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html#bespoke">Bespoke Itineraries</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html#accommodations"
+										>Luxury Accommodations</a
+									>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html#experiences">VIP Experiences</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html#transportation"
+										>Transportation Services</a
+									>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html#concierge">24/7 Concierge</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-6 footer-newsletter">
+							<h4>Join Our Newsletter</h4>
+							<p>
+								Subscribe to receive exclusive offers and travel inspiration
+							</p>
+							<form action="" method="post">
+								<input type="email" name="email" placeholder="Your email" />
+								<input type="submit" value="Subscribe" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container d-md-flex py-4">
+				<div class="me-md-auto text-center text-md-start">
+					<div class="copyright">
+						&copy; <span id="current-year"></span>
+						<strong><span>LuxTravel DMC</span></strong
+						>. All Rights Reserved
+					</div>
+				</div>
+				<div class="social-links text-center text-md-right pt-3 pt-md-0">
+					<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+					<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+					<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a
+			href="#"
+			class="back-to-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
+
+		<!-- Jquery -->
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<!-- Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Swiper JS for Testimonial Carousel -->
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<!-- AOS Animation Library -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- Slick library -->
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<!-- Custom JS -->
+		<script src="js/main.js"></script>
+	</body>
 </html>
