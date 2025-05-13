@@ -1,35 +1,47 @@
 $(document).ready(function () {
-	$(".home__shop-list").slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		arrows: true,
-		infinite: false,
-		prevArrow: `<button type="button" class="slick-prev"><img src="./images/arrow-1.png" alt=""></button>`,
-		nextArrow: `<button type="button" class="slick-next"><img src="./images/arrow-1-1.png" alt=""></button>`,
+  $(".home__shop-list").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: false,
+    prevArrow: `<button type="button" class="slick-prev"><img src="./images/arrow-1.png" alt=""></button>`,
+    nextArrow: `<button type="button" class="slick-next"><img src="./images/arrow-1-1.png" alt=""></button>`,
 
-		autoplay: false,
-		responsive: [
-			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 3,
-				},
-			},
-			{
-				breakpoint: 769,
-				settings: {
-					slidesToShow: 2,
-					arrows: false,
-				},
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					arrows: false,
-				},
-			},
-		],
-	});
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  $(".home-review__list").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    dots: true,
+    autoplaySpeed: 2000,
+    dotsClass: "slick-dots slick-dots__review",
+    pauseOnDotsHover: true,
+  });
 });

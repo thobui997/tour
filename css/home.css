@@ -120,9 +120,14 @@
 }
 
 .home__shop,
-.home__book {
+.home__book,
+.home__review {
   background-color: #f4f4f4;
   padding-block: 60px;
+}
+
+.home__review {
+  background-color: #fff;
 }
 
 .home__shop-content h2 {
@@ -265,6 +270,104 @@
   font-size: 14px;
   line-height: 1.57;
   color: #a39e9e;
+}
+
+.home-review__wrapper {
+  max-width: 970px;
+  margin-inline: auto;
+  padding-inline: 15px;
+  border: 1px solid #ddd;
+}
+
+.home-review__title {
+  font-size: 30px;
+  line-height: 0.84;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #231f20;
+  margin-block-end: 35px;
+  margin-block-start: -16px;
+}
+
+.home-review__title span {
+  background-color: #fff;
+  padding-inline: 10px;
+  display: inline-block;
+}
+
+.home-review__item {
+  padding-block-end: 30px;
+}
+
+.home-review__item .top {
+  padding-block-end: 20px;
+}
+
+.home-review__item .top .title {
+  font-size: 24px;
+  line-height: 1.21;
+  letter-spacing: 1px;
+  color: #000;
+  margin-block-end: 10px;
+}
+
+.home-review__item .top .meta {
+  font-size: 16px;
+  font-weight: 600;
+  color: #696969;
+}
+
+.home-review__item .bot {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.62;
+  text-align: center;
+  color: #231f20;
+}
+
+.home-review__button {
+  text-align: center;
+  margin-block-end: -13px;
+  padding-block-start: 30px;
+}
+
+.home-review__button a {
+  color: #111;
+  background-color: #faba40;
+  border: 1px solid #faba40;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.71;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  padding-block: 15px;
+  padding-inline: 20px;
+}
+
+.slick-dots__review {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+}
+
+.slick-dots__review button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100rem;
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+.slick-dots__review .slick-active button {
+  background-color: #000;
 }
 
 @media (min-width: 600px) {
