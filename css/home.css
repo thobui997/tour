@@ -119,7 +119,8 @@
   color: var(--light-text-color);
 }
 
-.home__shop {
+.home__shop,
+.home__book {
   background-color: #f4f4f4;
   padding-block: 60px;
 }
@@ -237,6 +238,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.book-item {
+  background-color: #000;
+  padding-block: 20px;
+  padding-inline: 30px;
+}
+
+.book-item__num {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #faba40;
+}
+
+.book-item__brief h3 {
+  color: #fff;
+  margin-block-end: 5px;
+  font-size: 20px;
+  line-height: 1.08;
+  letter-spacing: 0.8px;
+}
+
+.book-item__brief div {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #a39e9e;
 }
 
 @media (min-width: 600px) {
