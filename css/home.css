@@ -1,44 +1,7 @@
-#hero {
-  background-image: url(../images/setdeparture-banner-duoi2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70vh;
-}
 
-.hero__content h1,
-.hero__content h2 {
-  color: var(--light-text-color);
-  text-shadow: 0 0 20px #000;
-  text-align: center;
-}
-
-.hero__content h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: 0.8px;
-}
-
-.hero__content h2 {
-  font-size: 18px;
-}
-
-.hero__hotline {
-  bottom: 13px;
-  right: 0;
-}
-
-.hero__text i {
-  color: var(--primary-color);
-}
-
-.hero__text a {
-  color: #2f2f2f;
-  font-weight: 500;
-}
 
 .introduce {
-  background-color: #e7e7e7;
+  background-color: var(--section-bg-color);
 }
 
 .introduce__item {
@@ -122,7 +85,7 @@
 .home__shop,
 .home__book,
 .home__review {
-  background-color: #f4f4f4;
+  background-color: var(--section-bg-color);
   padding-block: 60px;
 }
 
@@ -327,22 +290,10 @@
 
 .home-review__button {
   text-align: center;
-  margin-block-end: -13px;
+  margin-block-end: -22px;
   padding-block-start: 30px;
 }
 
-.home-review__button a {
-  color: #111;
-  background-color: #faba40;
-  border: 1px solid #faba40;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.71;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  padding-block: 15px;
-  padding-inline: 20px;
-}
 
 .slick-dots__review {
   position: absolute;
@@ -386,11 +337,11 @@
 
 @media (min-width: 992px) {
   .introduce__item {
-    background-color: #e7e7e7;
+    background-color: var(--section-bg-color);
   }
 
   .introduce__item h2 {
-    color: #000;
+    color: var(--text-color);
   }
 
   .introduce__item p {

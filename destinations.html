@@ -1,626 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Destinations | LuxTravel DMC</title>
-		<!-- Bootstrap CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
-		<!-- Bootstrap Icons -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-		/>
-		<!-- AOS Animation Library -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/destinations.css" />
-	</head>
-	<body>
-		<!-- Header -->
-		<header id="header" class="fixed-top">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<div class="container-fluid px-0">
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="LuxTravel DMC" class="logo" />
-						</a>
-						<button
-							class="navbar-toggler"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarNav"
-							aria-controls="navbarNav"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ms-auto">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="about.html">About Us</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle active"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										Destinations
-									</a>
-									<ul class="dropdown-menu">
-										<li>
-											<a class="dropdown-item" href="destinations.html"
-												>All Destinations</a
-											>
-										</li>
-										<li><a class="dropdown-item" href="#europe">Europe</a></li>
-										<li>
-											<a class="dropdown-item" href="#middleeast"
-												>Middle East</a
-											>
-										</li>
-										<li><a class="dropdown-item" href="#asia">Asia</a></li>
-										<li><a class="dropdown-item" href="#africa">Africa</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="services.html">Services</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxTravel DMC | Luxury Travel Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS for Testimonial Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/destinations.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header__top">
+        <div class="header__top-content">
+          <div class="left">
+            <a href="#" class="header__btn-menu d-lg-none">
+              <i class="bi bi-list"></i>
+            </a>
+            <div class="d-none d-lg-block">
+              <ul
+                class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
+              >
+                <li>
+                  <i class="bi bi-envelope"></i>
+                  <a href="mailto:test@gmail.com">test@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-		<!-- Page Title Section -->
-		<section
-			id="page-title"
-			class="d-flex align-items-center justify-content-center"
-		>
-			<div class="container position-relative">
-				<h1>Our Destinations</h1>
-				<h2>Discover the World's Most Extraordinary Places</h2>
-			</div>
-		</section>
+          <div class="mid">LOGO</div>
 
-		<main id="main">
-			<!-- Destinations Overview -->
-			<section id="destinations-overview" class="destinations-overview">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Luxury Destinations</h2>
-						<p>Handcrafted Experiences in the World's Most Coveted Locations</p>
-					</div>
+          <div class="right">
+            <a href="#" class="header__btn-search d-lg-none">
+              <i class="bi bi-search"></i>
+            </a>
 
-					<div class="row content">
-						<div class="col-lg-6">
-							<p>
-								At LuxTravel DMC, we specialize in creating extraordinary
-								experiences in the world's most captivating destinations. Our
-								team of travel experts has curated a collection of luxury
-								destinations across Europe, the Middle East, Asia, and Africa,
-								each offering unique cultural experiences, spectacular
-								landscapes, and exceptional accommodations.
-							</p>
-							<p>
-								Whether you're seeking a romantic getaway in the Italian
-								countryside, an adventure in the Arabian desert, a cultural
-								immersion in Japan, or a wildlife safari in Africa, our
-								destination specialists will craft a bespoke journey tailored to
-								your preferences.
-							</p>
-						</div>
-						<div class="col-lg-6 pt-4 pt-lg-0">
-							<p>
-								What sets our destination offerings apart is our network of
-								local connections. In each location, we work with trusted
-								partners who provide insider access to experiences rarely
-								available to travelers—from private after-hours museum tours to
-								meetings with renowned artisans and chefs.
-							</p>
-							<p>
-								Browse our featured destinations below or contact us to discuss
-								creating a custom itinerary spanning multiple destinations.
-								Remember, this is just a small selection of the places we can
-								take you—our expertise extends to virtually any luxury
-								destination worldwide.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="d-none d-lg-block">
+              <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bot d-none d-lg-block">
+        <div class="container">
+          <nav class="d-flex justify-content-center align-items-center">
+            <ul
+              class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
+            >
+              <li><a href="index.html" class="active">HOME</a></li>
+              <li><a href="destinations.html">PACKAGES</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-			<!-- Europe Section -->
-			<section id="europe" class="destination-region section-bg">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Europe</h2>
-						<p>Classic Elegance and Timeless Luxury</p>
-					</div>
+    <!-- Hero Section -->
+    <section id="hero" class="position-relative">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
+      >
+        <h1>Vietnam</h1>
+        <h2>Sensing the Timeless Charm of Vietnam</h2>
+      </div>
+    </section>
 
-					<div class="row">
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="100"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg"
-									class="img-fluid"
-									alt="Santorini, Greece"
-								/>
-								<div class="destination-info">
-									<h4>Santorini, Greece</h4>
-									<p>
-										Experience the iconic white-washed buildings and
-										breathtaking sunsets of this romantic Greek island.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+    <!-- main -->
+    <main id="main">
+      <!-- destiny -->
+      <section class="destiny">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="destiny-content">
+                <h3 class="text-center">Discover the Beauty of Vietnam</h3>
+                <p>
+                  Vietnam is a unique country in Southeast Asia, where
+                  traditions that are thousands of years are still alive. The
+                  country is fast developing and old and new go in pair. We
+                  offer you our vast knowledge and expertise in Vietnam,
+                  bringing you the most authentic and bespoke holidays in
+                  Vietnam. Discover our luxury Vietnam tours and our Vietnam
+                  Holiday Packages, where you can combine nature, adventure,
+                  culture and beach holidays easily. Include in your holiday to
+                  Vietnam an incredible Halong Bay cruise, a visit to many
+                  UNESCO World Heritage sites such as Hue and Hoi An and uncover
+                  the mysteries of the Mekong Delta in the South. Don’t forget
+                  to include the unmissable rice terraces in Sapa or Mai Chau
+                  and a relaxing time in Hoi An, the little riverside town in
+                  the Central area of Vietnam.
+                </p>
+                <div class="d-none d-lg-block">
+                  <div
+                    class="count d-flex align-items-center justify-content-between gap-3 p-5"
+                  >
+                    <div class="count-item text-center">
+                      <div class="num">8</div>
+                      <div class="title">World Heritage Sites</div>
+                    </div>
+                    <div class="count-item text-center">
+                      <div class="num">54</div>
+                      <div class="title">Ethnic Minorities</div>
+                    </div>
+                    <div class="count-item text-center">
+                      <div class="num">63</div>
+                      <div class="title">Cities</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img
+                src="./images/vietnam-01.png"
+                alt="vietnam"
+                class="img-fluid"
+              />
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="200"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/1798631/pexels-photo-1798631.jpeg"
-									class="img-fluid"
-									alt="Amalfi Coast, Italy"
-								/>
-								<div class="destination-info">
-									<h4>Amalfi Coast, Italy</h4>
-									<p>
-										Discover the dramatic coastline, charming villages, and
-										exquisite cuisine of Italy's most picturesque region.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+              <div class="d-block d-lg-none">
+                <div
+                  class="count d-flex align-items-center justify-content-between gap-3 p-4"
+                >
+                  <div class="count-item text-center">
+                    <div class="num">8</div>
+                    <div class="title">World Heritage Sites</div>
+                  </div>
+                  <div class="count-item text-center">
+                    <div class="num">54</div>
+                    <div class="title">Ethnic Minorities</div>
+                  </div>
+                  <div class="count-item text-center">
+                    <div class="num">63</div>
+                    <div class="title">Cities</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="300"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/167076/pexels-photo-167076.jpeg"
-									class="img-fluid"
-									alt="Paris, France"
-								/>
-								<div class="destination-info">
-									<h4>Paris, France</h4>
-									<p>
-										Indulge in the romance, culture, and gastronomy of the City
-										of Light with exclusive access to its greatest treasures.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- tours -->
+      <section class="tours">
+        <div class="container">
+          <h3 class="title mb-4">Our Luxury Vietnam Tours</h3>
 
-			<!-- Middle East Section -->
-			<section id="middleeast" class="destination-region">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Middle East</h2>
-						<p>Modern Grandeur Meets Ancient Traditions</p>
-					</div>
+          <div class="tours-form pe-lg-3 mb-5">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-9">
+                <form class="p-3 row g-3">
+                  <div class="col-12 col-lg-6">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-label mb-0">Travel Style</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <select class="form-select form-select-lg">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-label mb-0"
+                          >Duration of the trip</label
+                        >
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <select class="form-select form-select-lg">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
 
-					<div class="row">
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="100"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg"
-									class="img-fluid"
-									alt="Dubai, UAE"
-								/>
-								<div class="destination-info">
-									<h4>Dubai, UAE</h4>
-									<p>
-										Experience the ultimate in luxury and opulence in this
-										ultramodern city rising from the desert sands.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+              <div class="col-12 col-lg-3">
+                <button class="btn btn-warning btn-lg w-100 d-block rounded-0">
+                  FIND TOUR
+                </button>
+              </div>
+            </div>
+          </div>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="200"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/3290068/pexels-photo-3290068.jpeg"
-									class="img-fluid"
-									alt="Istanbul, Turkey"
-								/>
-								<div class="destination-info">
-									<h4>Istanbul, Turkey</h4>
-									<p>
-										Discover the mystique of this transcontinental city where
-										East meets West, with its rich history and vibrant culture.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="row gy-3">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="tour-item">
+                <figure class="tour-item__img">
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed"
+                      alt="Lorem ipsum dolor sit amet"
+                    />
+                  </a>
+                </figure>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="300"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/3879071/pexels-photo-3879071.jpeg"
-									class="img-fluid"
-									alt="Petra, Jordan"
-								/>
-								<div class="destination-info">
-									<h4>Petra & Wadi Rum, Jordan</h4>
-									<p>
-										Explore ancient wonders and dramatic desert landscapes while
-										enjoying luxury accommodations under the stars.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="tour-item__content">
+                  <div class="date">12 Days</div>
+                  <div class="desc">
+                    <a href="#"
+                      >Timeless Scenery And Cultural Immersion In Vietnam’s
+                      Green Journey 12 Days</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-			<!-- Asia Section -->
-			<section id="asia" class="destination-region section-bg">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Asia</h2>
-						<p>Ancient Traditions and Spiritual Discoveries</p>
-					</div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="tour-item">
+                <figure class="tour-item__img">
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1746928340632-7861734eb7e3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Lorem ipsum dolor sit amet"
+                    />
+                  </a>
+                </figure>
 
-					<div class="row">
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="100"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/3568489/pexels-photo-3568489.jpeg"
-									class="img-fluid"
-									alt="Bali, Indonesia"
-								/>
-								<div class="destination-info">
-									<h4>Bali, Indonesia</h4>
-									<p>
-										Immerse yourself in the spiritual tranquility and natural
-										beauty of this island paradise with luxurious private
-										villas.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+                <div class="tour-item__content">
+                  <div class="date">12 Days</div>
+                  <div class="desc">
+                    <a href="#"
+                      >Timeless Scenery And Cultural Immersion In Vietnam’s
+                      Green Journey 12 Days</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="200"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/3669288/pexels-photo-3669288.jpeg"
-									class="img-fluid"
-									alt="Kyoto, Japan"
-								/>
-								<div class="destination-info">
-									<h4>Kyoto, Japan</h4>
-									<p>
-										Step back in time in Japan's cultural heart with private
-										access to ancient temples and traditional tea ceremonies.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="tour-item">
+                <figure class="tour-item__img">
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1746950862786-c13d07b85bff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dd"
+                      alt="Lorem ipsum dolor sit amet"
+                    />
+                  </a>
+                </figure>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="300"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/5458388/pexels-photo-5458388.jpeg"
-									class="img-fluid"
-									alt="Maldives"
-								/>
-								<div class="destination-info">
-									<h4>Maldives</h4>
-									<p>
-										Experience the ultimate in private island luxury with
-										overwater villas and pristine coral reefs.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="tour-item__content">
+                  <div class="date">12 Days</div>
+                  <div class="desc">
+                    <a href="#"
+                      >Timeless Scenery And Cultural Immersion In Vietnam’s
+                      Green Journey 12 Days</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-			<!-- Africa Section -->
-			<section id="africa" class="destination-region">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Africa</h2>
-						<p>Wild Adventure and Extraordinary Landscapes</p>
-					</div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="tour-item">
+                <figure class="tour-item__img">
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1747171232978-0e1cbcbcbdf8?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Lorem ipsum dolor sit amet"
+                    />
+                  </a>
+                </figure>
 
-					<div class="row">
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="100"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg"
-									class="img-fluid"
-									alt="Serengeti, Tanzania"
-								/>
-								<div class="destination-info">
-									<h4>Serengeti, Tanzania</h4>
-									<p>
-										Witness the incredible wildlife of the Serengeti while
-										staying in luxurious safari lodges with personalized
-										service.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+                <div class="tour-item__content">
+                  <div class="date">12 Days</div>
+                  <div class="desc">
+                    <a href="#"
+                      >Timeless Scenery And Cultural Immersion In Vietnam’s
+                      Green Journey 12 Days</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="200"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg"
-									class="img-fluid"
-									alt="Marrakech, Morocco"
-								/>
-								<div class="destination-info">
-									<h4>Marrakech, Morocco</h4>
-									<p>
-										Lose yourself in the exotic charm of Marrakech with stays in
-										exclusive riads and desert excursions.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="tour-item">
+                <figure class="tour-item__img">
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1747140415072-bf52b5f7739e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Lorem ipsum dolor sit amet"
+                    />
+                  </a>
+                </figure>
 
-						<div
-							class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-4 mt-lg-0"
-							data-aos="zoom-in"
-							data-aos-delay="300"
-						>
-							<div class="destination-card">
-								<img
-									src="https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg"
-									class="img-fluid"
-									alt="Cape Town, South Africa"
-								/>
-								<div class="destination-info">
-									<h4>Cape Town, South Africa</h4>
-									<p>
-										Experience the perfect blend of urban sophistication,
-										natural beauty, and world-class wines in this diverse city.
-									</p>
-									<div class="destination-links">
-										<a href="contact.html" class="enquire-btn">Enquire Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="tour-item__content">
+                  <div class="date">12 Days</div>
+                  <div class="desc">
+                    <a href="#"
+                      >Timeless Scenery And Cultural Immersion In Vietnam’s
+                      Green Journey 12 Days</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Call to Action Section -->
-			<section id="cta" class="cta">
-				<div class="container" data-aos="zoom-in">
-					<div class="row">
-						<div class="col-lg-9 text-center text-lg-start">
-							<h3>Ready to Plan Your Next Adventure?</h3>
-							<p>
-								Contact our destination specialists to create your perfect
-								luxury travel experience. Whether you've found inspiration from
-								our featured destinations or have somewhere else in mind, we're
-								here to bring your travel dreams to life.
-							</p>
-						</div>
-						<div class="col-lg-3 cta-btn-container text-center">
-							<a class="cta-btn align-middle" href="contact.html"
-								>Contact Us Now</a
-							>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+      <!-- guide -->
+      <section class="guide">
+        <div class="container">
+          <h3 class="text-center mb-3">Travel Guide</h3>
+          <div class="row gy-4">
+            <div class="col-12 col-lg-7">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the first item’s accordion body.</strong>
+                      It is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It’s also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item’s accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It’s also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It’s also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 footer-contact">
-							<h3>LuxTravel DMC</h3>
-							<p>
-								1234 Luxury Avenue <br />
-								Suite 500<br />
-								New York, NY 10001 <br />
-								United States <br /><br />
-								<strong>Phone:</strong> +1 (555) 123-4567<br />
-								<strong>Email:</strong> info@luxtraveldmc.com<br />
-							</p>
-						</div>
+            <div class="col-12 col-lg-5">
+              <div class="expert-profile">
+                <div class="text-center expert-content mb-4">
+                  <h4 class="title">Meet our Expert</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="avatar">
+                      <img
+                        src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="name">Mr. Wayne Rooney</div>
+                  <div class="intro">
+                    I’m proud to represent Lux Travel DMC and to help you find
+                    your perfect vacation. Before you book elsewhere, check with
+                    me please! You will receive added benefit of booking with
+                    Lux Travel DMC as well
+                  </div>
+                </div>
 
-						<div class="col-lg-3 col-md-6 footer-links">
-							<h4>Useful Links</h4>
-							<ul>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="index.html">Home</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="about.html">About us</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html">Services</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#">Terms of service</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#">Privacy policy</a>
-								</li>
-							</ul>
-						</div>
+                <div class="text-center expert-content">
+                  <div class="phone">+84-986-980-060</div>
+                  <div class="desc">
+                    We offer luxury tour packages to Southeast Asia
+                  </div>
+                  <div class="email">sales@luxtraveldmc.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<div class="col-lg-3 col-md-6 footer-links">
-							<h4>Our Services</h4>
-							<ul>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#bespoke">Bespoke Itineraries</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#accommodations"
-										>Luxury Accommodations</a
-									>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#experiences">VIP Experiences</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#transportation"
-										>Transportation Services</a
-									>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#concierge">24/7 Concierge</a>
-								</li>
-							</ul>
-						</div>
+      <!-- best destination -->
+      <section class="best-destinations">
+        <div class="container">
+          <h3 class="text-center mb-4">Best destinations in Vietnam</h3>
 
-						<div class="col-lg-3 col-md-6 footer-newsletter">
-							<h4>Join Our Newsletter</h4>
-							<p>
-								Subscribe to receive exclusive offers and travel inspiration
-							</p>
-							<form action="" method="post">
-								<input type="email" name="email" placeholder="Your email" />
-								<input type="submit" value="Subscribe" />
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+          <div class="destination-list">
+            <div class="destination-item">
+              <div class="img">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="brief"><a href="#">Hanoi</a></div>
+            </div>
 
-			<div class="container d-md-flex py-4">
-				<div class="me-md-auto text-center text-md-start">
-					<div class="copyright">
-						&copy; <span id="current-year"></span>
-						<strong><span>LuxTravel DMC</span></strong
-						>. All Rights Reserved
-					</div>
-				</div>
-				<div class="social-links text-center text-md-right pt-3 pt-md-0">
-					<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-					<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-					<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-					<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-				</div>
-			</div>
-		</footer>
+            <div class="destination-item">
+              <div class="img">
+                <a href="#">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1747135794086-280753a24793?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="brief"><a href="#">Saigon</a></div>
+            </div>
 
-		<a
-			href="#"
-			class="back-to-top d-flex align-items-center justify-content-center"
-			><i class="bi bi-arrow-up-short"></i
-		></a>
+            <div class="destination-item">
+              <div class="img">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1746202382539-396b84a941ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="brief"><a href="#">Danang</a></div>
+            </div>
 
-		<!-- Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- AOS Animation Library -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<!-- Custom JS -->
-		<script src="js/main.js"></script>
-	</body>
+            <div class="destination-item">
+              <div class="img">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1746311585296-f91039c70a8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="brief"><a href="#">Nhatrang</a></div>
+            </div>
+
+            <div class="destination-item">
+              <div class="img">
+                <a href="#">
+                  <img
+                    src="https://images.unsplash.com/photo-1746311585296-f91039c70a8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="brief"><a href="#">Nhatrang</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tour banner -->
+      <section class="tour-banner">
+        <div class="tour-banner-content">
+          <h3>
+            We know you are unique, so we're here to create unique experiences
+            for you
+          </h3>
+          <a class="btn btn-warning btn-lg" href="#">MAKE AN ENQUIRY</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>LuxTravel DMC</h3>
+              <p>
+                1234 Luxury Avenue <br />
+                Suite 500<br />
+                New York, NY 10001 <br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 (555) 123-4567<br />
+                <strong>Email:</strong> info@luxtraveldmc.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="about.html">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#bespoke">Bespoke Itineraries</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#accommodations"
+                    >Luxury Accommodations</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#experiences">VIP Experiences</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#transportation"
+                    >Transportation Services</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#concierge">24/7 Concierge</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Subscribe to receive exclusive offers and travel inspiration
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" placeholder="Your email" />
+                <input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; <span id="current-year"></span>
+            <strong><span>LuxTravel DMC</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS for Testimonial Carousel -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slick library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
