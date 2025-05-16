@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxTravel DMC | Luxury Travel Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS for Testimonial Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tour-detail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header__top">
+        <div class="header__top-content">
+          <div class="left">
+            <a href="#" class="header__btn-menu d-lg-none">
+              <i class="bi bi-list"></i>
+            </a>
+            <div class="d-none d-lg-block">
+              <ul
+                class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
+              >
+                <li>
+                  <i class="bi bi-envelope"></i>
+                  <a href="mailto:test@gmail.com">test@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mid">LOGO</div>
+
+          <div class="right">
+            <a href="#" class="header__btn-search d-lg-none">
+              <i class="bi bi-search"></i>
+            </a>
+
+            <div class="d-none d-lg-block">
+              <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bot d-none d-lg-block">
+        <div class="container">
+          <nav class="d-flex justify-content-center align-items-center">
+            <ul
+              class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
+            >
+              <li><a href="index.html" class="active">HOME</a></li>
+              <li><a href="destinations.html">PACKAGES</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="banner-slider">
+      <div class="slider-top">
+        <div class="silder-top-item">
+          <div class="img">
+            <a
+              href="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+              class="d-block"
+            >
+              <img
+                class="img-fluid d-block w-100 object-fit-cover"
+                src="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+                alt=""
+                data-fancybox="gallery1"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="silder-top-item">
+          <div class="img">
+            <a
+              href="https://images.unsplash.com/photo-1743601587751-01dc32b707d2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block"
+            >
+              <img
+                class="img-fluid d-block w-100 object-fit-cover"
+                src="https://images.unsplash.com/photo-1743601587751-01dc32b707d2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                data-fancybox="gallery1"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="silder-top-item">
+          <div class="img">
+            <a
+              href="https://plus.unsplash.com/premium_photo-1747290111870-5842a4f652cc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block"
+              data-fancybox="gallery1"
+            >
+              <img
+                class="img-fluid d-block w-100 object-fit-cover"
+                src="https://plus.unsplash.com/premium_photo-1747290111870-5842a4f652cc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-bot-wrapper">
+        <div class="container">
+          <div class="slider-bot">
+            <div class="slider-bot-item">
+              <div class="img">
+                <a
+                  href="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+                  class="d-block"
+                  data-fancybox="gallery2"
+                >
+                  <img
+                    class="img-fluid d-block w-100 object-fit-cover"
+                    src="https://images.unsplash.com/photo-1746713915201-4eed01ca887a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-bot-item">
+              <div class="img">
+                <a
+                  href="https://images.unsplash.com/photo-1743601587751-01dc32b707d2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block"
+                  data-fancybox="gallery2"
+                >
+                  <img
+                    class="img-fluid d-block w-100 object-fit-cover"
+                    src="https://images.unsplash.com/photo-1743601587751-01dc32b707d2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-bot-item">
+              <div class="img">
+                <a
+                  href="https://plus.unsplash.com/premium_photo-1747290111870-5842a4f652cc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block"
+                  data-fancybox="gallery2"
+                >
+                  <img
+                    class="img-fluid d-block w-100 object-fit-cover"
+                    src="https://plus.unsplash.com/premium_photo-1747290111870-5842a4f652cc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main -->
+    <main id="main">
+      <nav class="navbar bg-body-tertiary px-3 mb-3 sticky-top">
+        <a class="btn btn-warning btn-lg" id="book-tour-btn">BOOK THIS TOUR</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyOverview">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyTourplan">Tour plan</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true"
+        class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-4 mb-lg-0 col-lg-7">
+              <div id="scrollspyOverview">
+                <h4 class="tour-detail__title">
+                  Experience A Blissful Journey At Bai San Ho 5 days
+                </h4>
+                <p class="tour-detail__desc">
+                  Zannier Phu Yen, Vietnam is a hidden gem that offers a unique
+                  blend of natural beauty, cultural heritage, and culinary
+                  delights. Whether you’re a beach lover, history enthusiast, or
+                  foodie, Phu Yen has something to offer for you. Discover
+                  authentic Vietnam with a 4-night Gourmet Journey at Zannier
+                  Hotels Bãi San Hô where every detail is crafted to share the
+                  country’s rich cultural heritage through a journey of the
+                  senses.
+                </p>
+
+                <h4 class="tour-detail__title">Tour Included</h4>
+                <ul class="tour-detail__list mb-3">
+                  <li>4 nights accommodation in a luxury villa</li>
+                  <li>Daily breakfast for 2 persons</li>
+                  <li>Private airport transfer</li>
+                  <li>Complimentary spa treatment for 2 persons</li>
+                  <li>Private guided tour of local attractions</li>
+                  <li>Cooking class with a local chef</li>
+                  <li>Complimentary bicycle rental</li>
+                  <li>Access to all resort facilities</li>
+                </ul>
+
+                <h4 class="tour-detail__title">Tour Excluded</h4>
+                <ul class="tour-detail__list">
+                  <li>International flights</li>
+                  <li>Travel insurance</li>
+                  <li>Personal expenses</li>
+                  <li>Tips and gratuities</li>
+                  <li>Any items not mentioned in the itinerary</li>
+                </ul>
+              </div>
+
+              <div id="scrollspyTourplan" class="mt-3">
+                <h4 class="tour-detail__title">Tour Plan</h4>
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"
+                      >
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseOne"
+                      class="accordion-collapse collapse show"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item’s accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It’s also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo"
+                      >
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseTwo"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item’s accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It’s also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree"
+                      >
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseThree"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item’s accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It’s also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div
+                class="tour-detail-form-wrapper hightlight"
+                id="tourDetailForm"
+              >
+                <h4 class="tour-detail__title top">Book This Tour</h4>
+                <form class="tour-detail__form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      aria-describedby="nameHelp"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phoneNumber" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="mail" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mail"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </form>
+
+                <div
+                  class="d-flex justify-content-between align-items-center bot"
+                >
+                  <div>From &nbsp;&nbsp;<span class="price">$1578</span></div>
+                  <button class="btn btn-warning">SEND</button>
+                </div>
+              </div>
+
+              <div class="tour-detail-form-wrapper mt-4">
+                <h4 class="tour-detail__title top">How It Works</h4>
+
+                <div class="tour-detail__how-it-works">
+                  <div
+                    class="d-flex align-items-center gap-4 border-bottom p-3"
+                  >
+                    <div class="num">01</div>
+                    <div class="flex-fill">
+                      <div class="title">Send us your inquiry</div>
+                      <div class="text">& tell us your preferences</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center gap-4 border-bottom p-3"
+                  >
+                    <div class="num">02</div>
+                    <div class="flex-fill">
+                      <div class="title">Send us your inquiry</div>
+                      <div class="text">& tell us your preferences</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-4 p-3">
+                    <div class="num">03</div>
+                    <div class="flex-fill">
+                      <div class="title">Send us your inquiry</div>
+                      <div class="text">& tell us your preferences</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--  -->
+    <section class="tour-banner">
+      <div class="tour-banner-content">
+        <h3>
+          We know you are unique, so we're here to create unique experiences for
+          you
+        </h3>
+        <div class="d-flex justify-content-center align-items-center gap-5">
+          <div class="d-flex flex-column align-items-center text-white">
+            <div class="icon"><i class="bi bi-telephone-fill"></i></div>
+            <div class="label">Contact us</div>
+            <div>Call us: +84-986-980-060</div>
+          </div>
+          <div class="d-flex flex-column align-items-center text-white">
+            <div class="icon"><i class="bi bi-file-earmark-medical"></i></div>
+            <div class="label">Contact us</div>
+            <div>Send Enquiry</div>
+          </div>
+          <div class="d-flex flex-column align-items-center text-white">
+            <div class="icon"><i class="bi bi-envelope"></i></div>
+            <div class="label">Mail Us</div>
+            <div>sales@abc.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>LuxTravel DMC</h3>
+              <p>
+                1234 Luxury Avenue <br />
+                Suite 500<br />
+                New York, NY 10001 <br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 (555) 123-4567<br />
+                <strong>Email:</strong> info@luxtraveldmc.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="about.html">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#bespoke">Bespoke Itineraries</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#accommodations"
+                    >Luxury Accommodations</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#experiences">VIP Experiences</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#transportation"
+                    >Transportation Services</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#concierge">24/7 Concierge</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Subscribe to receive exclusive offers and travel inspiration
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" placeholder="Your email" />
+                <input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; <span id="current-year"></span>
+            <strong><span>LuxTravel DMC</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS for Testimonial Carousel -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slick library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

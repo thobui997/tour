@@ -77,4 +77,67 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".slider-top").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    adaptiveHeight: true,
+    prevArrow: `<button type="button" class="slick-prev"><img src="./images/arrow-1.png" alt=""></button>`,
+    nextArrow: `<button type="button" class="slick-next"><img src="./images/arrow-1-1.png" alt=""></button>`,
+    asNavFor: ".slider-bot",
+  });
+
+  $(".slider-bot").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: ".slider-top",
+    dots: false,
+    focusOnSelect: true,
+    arrows: false,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  Fancybox.bind("[data-fancybox='gallery1']", {
+    // Your custom options
+  });
+
+  Fancybox.bind("[data-fancybox='gallery2']", {
+    // Your custom options
+  });
+
+  $("#book-tour-btn").on("click", function (e) {
+    e.preventDefault();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#tourDetailForm").offset().top,
+      },
+      500,
+      function () {
+        $(".tour-detail__form").find("input:first").focus();
+      }
+    );
+  });
 });
