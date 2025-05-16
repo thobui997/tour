@@ -1,7 +1,26 @@
+.banner-slider {
+  height: 60vh;
+  position: relative;
+}
+
+.slider-top .silder-top-item .img img {
+  height: 60vh;
+}
+
 .slider-bot-wrapper {
   padding: 10px;
-  background-color: var(--section-bg-color);
-  border-bottom: 1px solid #818181;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-bot-wrapper {
+    max-width: 500px;
+  }
 }
 
 .slider-bot.slick-initialized .slick-slide {
