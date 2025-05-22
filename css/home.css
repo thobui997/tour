@@ -1,5 +1,84 @@
 
 
+/* Find Tour Form Styles for Homepage */
+.tours-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+#hero .tours-form .form-select {
+  border: none;
+  border-radius: 0;
+}
+
+#hero .tours-form .text-white {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+#hero .tours-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#hero .tours-form .form-select {
+  height: 48px;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+#hero .tours-form .form-label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+#hero .tours-form .btn-warning {
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+#hero .tours-form .btn-warning:hover {
+  background-color: #ffb632;
+  transform: translateY(-2px);
+}
+
+/* Mobile Find Tour Form Styles */
+.tours-form-mobile {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.tours-form-mobile .form-select {
+  border-radius: 0;
+  height: 45px;
+  font-size: 14px;
+}
+
+.tours-form-mobile .btn-warning {
+  border-radius: 0;
+  height: 45px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.tours-form-mobile .form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+
 .introduce {
   background-color: var(--section-bg-color);
 }
