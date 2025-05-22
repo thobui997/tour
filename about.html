@@ -1,569 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About Us | LuxTravel DMC</title>
-		<!-- Bootstrap CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
-		<!-- Bootstrap Icons -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-		/>
-		<!-- AOS Animation Library -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/about.css" />
-	</head>
-	<body>
-		<!-- Header -->
-		<header id="header" class="fixed-top">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<div class="container-fluid px-0">
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="LuxTravel DMC" class="logo" />
-						</a>
-						<button
-							class="navbar-toggler"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarNav"
-							aria-controls="navbarNav"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ms-auto">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link active" href="about.html">About Us</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										Destinations
-									</a>
-									<ul class="dropdown-menu">
-										<li>
-											<a class="dropdown-item" href="destinations.html"
-												>All Destinations</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="destinations.html#europe"
-												>Europe</a
-											>
-										</li>
-										<li>
-											<a
-												class="dropdown-item"
-												href="destinations.html#middleeast"
-												>Middle East</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="destinations.html#asia"
-												>Asia</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="destinations.html#africa"
-												>Africa</a
-											>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="services.html">Services</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxTravel DMC | Luxury Travel Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS for Testimonial Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header__top">
+        <div class="header__top-content">
+          <div class="left">
+            <a href="#" class="header__btn-menu d-lg-none">
+              <i class="bi bi-list"></i>
+            </a>
+            <div class="d-none d-lg-block">
+              <ul
+                class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
+              >
+                <li>
+                  <i class="bi bi-envelope"></i>
+                  <a href="mailto:test@gmail.com">test@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-		<!-- Page Title Section -->
-		<section
-			id="page-title"
-			class="d-flex align-items-center justify-content-center"
-		>
-			<div class="container position-relative">
-				<h1>About Us</h1>
-				<h2>Creating Extraordinary Travel Experiences Since 2010</h2>
-			</div>
-		</section>
+          <div class="mid">LOGO</div>
 
-		<main id="main">
-			<!-- About Overview Section -->
-			<section id="about-overview" class="about-overview">
-				<div class="container" data-aos="fade-up">
-					<div class="row content">
-						<div class="col-lg-6">
-							<h3>Welcome to LuxTravel DMC</h3>
-							<p>
-								Founded in 2010, LuxTravel DMC has established itself as a
-								premier destination management company specializing in luxury
-								travel experiences across the globe. Our founder, Elizabeth
-								Chen, started the company with a simple vision: to create travel
-								experiences that transform lives while providing unparalleled
-								luxury and attention to detail.
-							</p>
-							<p>
-								Today, we are proud to serve discerning travelers from around
-								the world, from celebrities and executives to families seeking
-								extraordinary vacations. Our headquarters in New York is
-								supported by regional offices in London, Dubai, and Singapore,
-								allowing us to provide on-the-ground expertise in key luxury
-								destinations.
-							</p>
-						</div>
-						<div class="col-lg-6 pt-4 pt-lg-0">
-							<h3>Our Philosophy</h3>
-							<p>
-								At LuxTravel DMC, we believe that true luxury is defined by
-								personalization, exclusivity, and authenticity. We don't simply
-								book hotels and flights—we craft journeys that reflect your
-								unique interests, preferences, and dreams.
-							</p>
-							<p>
-								We understand that your time is precious, and vacations are
-								opportunities for rejuvenation, connection, and discovery.
-								That's why each itinerary we create is treated as a work of
-								art—carefully crafted, thoughtfully designed, and flawlessly
-								executed.
-							</p>
-							<p>
-								Most importantly, we believe that luxury travel should create
-								lasting memories and meaningful connections with the places you
-								visit and the people you meet along the way.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div class="right">
+            <a href="#" class="header__btn-search d-lg-none">
+              <i class="bi bi-search"></i>
+            </a>
 
-			<!-- Why Choose Us Section -->
-			<section id="why-choose-us" class="why-choose-us section-bg">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Why Choose Us</h2>
-						<p>Setting the Standard in Luxury Travel Management</p>
-					</div>
+            <div class="d-none d-lg-block">
+              <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bot d-none d-lg-block">
+        <div class="container">
+          <nav class="d-flex justify-content-center align-items-center">
+            <div class="header__bot-logo d-none">LOGO</div>
+            <ul
+              class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
+            >
+              <li><a href="index.html" class="active">HOME</a></li>
+              <li class="has-mega-menu">
+                <a href="destinations.html">PACKAGES</a>
+                <div class="mega-menu">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <h3 class="mega-menu__title">Vietnam</h3>
+                        <ul class="mega-menu__list">
+                          <li><a href="tour-detail.html">Hanoi</a></li>
+                          <li>
+                            <a href="tour-detail.html">Ho Chi Minh City</a>
+                          </li>
+                          <li><a href="tour-detail.html">Halong Bay</a></li>
+                          <li><a href="tour-detail.html">Da Nang</a></li>
+                          <li><a href="tour-detail.html">Hoi An</a></li>
+                          <li><a href="tour-detail.html">Sapa</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="mega-menu__title">Thailand</h3>
+                        <ul class="mega-menu__list">
+                          <li><a href="tour-detail.html">Bangkok</a></li>
+                          <li><a href="tour-detail.html">Chiang Mai</a></li>
+                          <li><a href="tour-detail.html">Phuket</a></li>
+                          <li><a href="tour-detail.html">Koh Samui</a></li>
+                          <li><a href="tour-detail.html">Krabi</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="mega-menu__title">Japan</h3>
+                        <ul class="mega-menu__list">
+                          <li><a href="tour-detail.html">Tokyo</a></li>
+                          <li><a href="tour-detail.html">Kyoto</a></li>
+                          <li><a href="tour-detail.html">Osaka</a></li>
+                          <li><a href="tour-detail.html">Hokkaido</a></li>
+                          <li><a href="tour-detail.html">Mount Fuji</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="mega-menu__featured">
+                          <img
+                            src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed"
+                            alt="Featured Destination"
+                          />
+                          <div class="mega-menu__caption">
+                            <h4>Best of Southeast Asia</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-					<div class="row">
-						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="box">
-								<div class="icon"><i class="bi bi-gem"></i></div>
-								<h4>Unmatched Expertise</h4>
-								<p>
-									Our team of travel designers averages 15+ years of experience
-									in luxury travel, with specialized knowledge of their assigned
-									destinations.
-								</p>
-							</div>
-						</div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__header">
+        <div class="logo">LOGO</div>
+        <div class="mobile-menu__close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li class="has-dropdown">
+          <a href="#">PACKAGES</a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="tour-detail.html">Vietnam</a></li>
+              <li><a href="tour-detail.html">Thailand</a></li>
+              <li><a href="tour-detail.html">Laos</a></li>
+              <li><a href="tour-detail.html">Cambodia</a></li>
+              <li><a href="tour-detail.html">Japan</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <ul class="mobile-menu__contact">
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:test@gmail.com">test@gmail.com</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+84-1234-678-090">+84-1234-678-090</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
 
-						<div
-							class="col-lg-4 mt-4 mt-lg-0"
-							data-aos="fade-up"
-							data-aos-delay="200"
-						>
-							<div class="box">
-								<div class="icon"><i class="bi bi-key"></i></div>
-								<h4>Exclusive Access</h4>
-								<p>
-									Our extensive network of global partners provides access to
-									experiences and venues rarely available to the public or
-									through traditional travel agencies.
-								</p>
-							</div>
-						</div>
+    <!-- Hero Section -->
+    <section id="hero" class="position-relative">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
+      >
+        <h2>Luxury Tailor-Made Tours to</h2>
+        <h1>Southeast Asia</h1>
+      </div>
+      <div class="d-lg-none position-absolute hero__hotline">
+        <div class="d-flex gap-5 align-items-center">
+          <div class="hero__text">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+          </div>
 
-						<div
-							class="col-lg-4 mt-4 mt-lg-0"
-							data-aos="fade-up"
-							data-aos-delay="300"
-						>
-							<div class="box">
-								<div class="icon"><i class="bi bi-shield-check"></i></div>
-								<h4>24/7 Dedicated Support</h4>
-								<p>
-									From the moment you begin planning until you return home, our
-									team provides constant support to handle any request or
-									resolve unexpected issues.
-								</p>
-							</div>
-						</div>
+          <div>
+            <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="box">
-								<div class="icon"><i class="bi bi-stars"></i></div>
-								<h4>Personalization</h4>
-								<p>
-									We create fully customized itineraries based on in-depth
-									conversations about your interests, travel style, and specific
-									requests.
-								</p>
-							</div>
-						</div>
+    <!-- main -->
+    <main id="main"></main>
 
-						<div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
-							<div class="box">
-								<div class="icon"><i class="bi bi-currency-exchange"></i></div>
-								<h4>Transparent Pricing</h4>
-								<p>
-									We provide clear, detailed pricing with no hidden fees,
-									ensuring you understand the value of every aspect of your
-									journey.
-								</p>
-							</div>
-						</div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>LuxTravel DMC</h3>
+              <p>
+                1234 Luxury Avenue <br />
+                Suite 500<br />
+                New York, NY 10001 <br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 (555) 123-4567<br />
+                <strong>Email:</strong> info@luxtraveldmc.com<br />
+              </p>
+            </div>
 
-						<div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="300">
-							<div class="box">
-								<div class="icon"><i class="bi bi-heart"></i></div>
-								<h4>Sustainability Focus</h4>
-								<p>
-									We partner with properties and experiences that prioritize
-									environmental conservation and support local communities.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="about.html">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
 
-			<!-- Team Section -->
-			<section id="team" class="team">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Our Team</h2>
-						<p>Meet Our Experienced Travel Experts</p>
-					</div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#bespoke">Bespoke Itineraries</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#accommodations"
+                    >Luxury Accommodations</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#experiences">VIP Experiences</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#transportation"
+                    >Transportation Services</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#concierge">24/7 Concierge</a>
+                </li>
+              </ul>
+            </div>
 
-					<div class="row">
-						<div
-							class="col-lg-3 col-md-6 d-flex align-items-stretch"
-							data-aos="fade-up"
-							data-aos-delay="100"
-						>
-							<div class="member">
-								<div class="member-img">
-									<img
-										src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg"
-										class="img-fluid"
-										alt="Elizabeth Chen"
-									/>
-								</div>
-								<div class="member-info">
-									<h4>Elizabeth Chen</h4>
-									<span>Founder & CEO</span>
-									<p>
-										With over 25 years in luxury hospitality and travel,
-										Elizabeth founded LuxTravel DMC to set new standards in
-										bespoke travel experiences.
-									</p>
-									<div class="social">
-										<a href=""><i class="bi bi-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Subscribe to receive exclusive offers and travel inspiration
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" placeholder="Your email" />
+                <input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
-						<div
-							class="col-lg-3 col-md-6 d-flex align-items-stretch"
-							data-aos="fade-up"
-							data-aos-delay="200"
-						>
-							<div class="member">
-								<div class="member-img">
-									<img
-										src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg"
-										class="img-fluid"
-										alt="Marco Rossi"
-									/>
-								</div>
-								<div class="member-info">
-									<h4>Marco Rossi</h4>
-									<span>Europe Specialist</span>
-									<p>
-										Born in Italy and having lived across Europe, Marco brings
-										authentic local knowledge to create immersive European
-										experiences.
-									</p>
-									<div class="social">
-										<a href=""><i class="bi bi-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; <span id="current-year"></span>
+            <strong><span>LuxTravel DMC</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
 
-						<div
-							class="col-lg-3 col-md-6 d-flex align-items-stretch"
-							data-aos="fade-up"
-							data-aos-delay="300"
-						>
-							<div class="member">
-								<div class="member-img">
-									<img
-										src="https://images.pexels.com/photos/5324924/pexels-photo-5324924.jpeg"
-										class="img-fluid"
-										alt="Priya Sharma"
-									/>
-								</div>
-								<div class="member-info">
-									<h4>Priya Sharma</h4>
-									<span>Asia & Middle East Specialist</span>
-									<p>
-										Priya's extensive network across Asia and the Middle East
-										provides clients with unparalleled access to exclusive
-										experiences.
-									</p>
-									<div class="social">
-										<a href=""><i class="bi bi-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div
-							class="col-lg-3 col-md-6 d-flex align-items-stretch"
-							data-aos="fade-up"
-							data-aos-delay="400"
-						>
-							<div class="member">
-								<div class="member-img">
-									<img
-										src="https://images.pexels.com/photos/2117283/pexels-photo-2117283.jpeg"
-										class="img-fluid"
-										alt="James Thompson"
-									/>
-								</div>
-								<div class="member-info">
-									<h4>James Thompson</h4>
-									<span>Adventure Experiences Director</span>
-									<p>
-										Former expedition leader, James specializes in combining
-										luxury comfort with extraordinary adventure experiences
-										worldwide.
-									</p>
-									<div class="social">
-										<a href=""><i class="bi bi-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Certifications Section -->
-			<section id="certifications" class="certifications section-bg">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Our Credentials</h2>
-						<p>Industry Recognition and Partnerships</p>
-					</div>
-
-					<div class="row">
-						<div
-							class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"
-							data-aos="zoom-in"
-						>
-							<div class="certification-item">
-								<i class="bi bi-award-fill"></i>
-								<h3>Virtuoso Member</h3>
-							</div>
-						</div>
-
-						<div
-							class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"
-							data-aos="zoom-in"
-						>
-							<div class="certification-item">
-								<i class="bi bi-award-fill"></i>
-								<h3>Traveller Made</h3>
-							</div>
-						</div>
-
-						<div
-							class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"
-							data-aos="zoom-in"
-						>
-							<div class="certification-item">
-								<i class="bi bi-award-fill"></i>
-								<h3>Luxury Travel Certification</h3>
-							</div>
-						</div>
-
-						<div
-							class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"
-							data-aos="zoom-in"
-						>
-							<div class="certification-item">
-								<i class="bi bi-award-fill"></i>
-								<h3>Forbes Travel Guide Partner</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Call to Action Section -->
-			<section id="cta" class="cta">
-				<div class="container" data-aos="zoom-in">
-					<div class="row">
-						<div class="col-lg-9 text-center text-lg-start">
-							<h3>Ready to Start Your Journey?</h3>
-							<p>
-								Connect with our team of luxury travel experts today to begin
-								planning your next extraordinary adventure.
-							</p>
-						</div>
-						<div class="col-lg-3 cta-btn-container text-center">
-							<a class="cta-btn align-middle" href="contact.html"
-								>Contact Us Now</a
-							>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 footer-contact">
-							<h3>LuxTravel DMC</h3>
-							<p>
-								1234 Luxury Avenue <br />
-								Suite 500<br />
-								New York, NY 10001 <br />
-								United States <br /><br />
-								<strong>Phone:</strong> +1 (555) 123-4567<br />
-								<strong>Email:</strong> info@luxtraveldmc.com<br />
-							</p>
-						</div>
-
-						<div class="col-lg-3 col-md-6 footer-links">
-							<h4>Useful Links</h4>
-							<ul>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="index.html">Home</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="about.html">About us</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html">Services</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#">Terms of service</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#">Privacy policy</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-lg-3 col-md-6 footer-links">
-							<h4>Our Services</h4>
-							<ul>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#bespoke">Bespoke Itineraries</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#accommodations"
-										>Luxury Accommodations</a
-									>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#experiences">VIP Experiences</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#transportation"
-										>Transportation Services</a
-									>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="services.html#concierge">24/7 Concierge</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-lg-3 col-md-6 footer-newsletter">
-							<h4>Join Our Newsletter</h4>
-							<p>
-								Subscribe to receive exclusive offers and travel inspiration
-							</p>
-							<form action="" method="post">
-								<input type="email" name="email" placeholder="Your email" />
-								<input type="submit" value="Subscribe" />
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container d-md-flex py-4">
-				<div class="me-md-auto text-center text-md-start">
-					<div class="copyright">
-						&copy; <span id="current-year"></span>
-						<strong><span>LuxTravel DMC</span></strong
-						>. All Rights Reserved
-					</div>
-				</div>
-				<div class="social-links text-center text-md-right pt-3 pt-md-0">
-					<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-					<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-					<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-					<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-				</div>
-			</div>
-		</footer>
-
-		<a
-			href="#"
-			class="back-to-top d-flex align-items-center justify-content-center"
-			><i class="bi bi-arrow-up-short"></i
-		></a>
-
-		<!-- Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- AOS Animation Library -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<!-- Custom JS -->
-		<script src="js/main.js"></script>
-	</body>
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS for Testimonial Carousel -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slick library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
