@@ -1,4 +1,42 @@
 $(document).ready(function () {
+  // Mobile menu toggle
+  $(".header__btn-menu").on("click", function (e) {
+    e.preventDefault();
+    $(".mobile-menu").toggleClass("active");
+  });
+
+  // Close mobile menu
+  $(".mobile-menu__close").on("click", function () {
+    $(".mobile-menu").removeClass("active");
+  });
+
+  // Close mobile menu when clicking outside
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".mobile-menu, .header__btn-menu").length) {
+      $(".mobile-menu").removeClass("active");
+    }
+  });
+
+  // Toggle mega menu on hover for desktop
+  $(".has-mega-menu").hover(
+    function () {
+      $(this).find(".mega-menu").addClass("active");
+    },
+    function () {
+      $(this).find(".mega-menu").removeClass("active");
+    }
+  );
+
+  // Toggle dropdown in mobile menu
+  $(".mobile-menu .has-dropdown > a").on("click", function (e) {
+    e.preventDefault();
+    $(this).next(".dropdown-content").slideToggle();
+    $(this).parent().toggleClass("open");
+  });
+
+  // Set current year in footer
+  $("#current-year").text(new Date().getFullYear());
+
   $(".home__shop-list").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -109,14 +147,6 @@ $(document).ready(function () {
         },
       },
     ],
-  });
-
-  Fancybox.bind("[data-fancybox='gallery1']", {
-    // Your custom options
-  });
-
-  Fancybox.bind("[data-fancybox='gallery2']", {
-    // Your custom options
   });
 
   $("#book-tour-btn").on("click", function (e) {

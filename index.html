@@ -65,11 +65,62 @@
       <div class="header__bot d-none d-lg-block">
         <div class="container">
           <nav class="d-flex justify-content-center align-items-center">
+            <div class="header__bot-logo d-none">LOGO</div>
             <ul
               class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
             >
               <li><a href="index.html" class="active">HOME</a></li>
-              <li><a href="destinations.html">PACKAGES</a></li>
+              <li class="has-mega-menu">
+                <a href="destinations.html">PACKAGES</a>
+                <div class="mega-menu">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <h3 class="mega-menu__title">Vietnam</h3>
+                        <ul class="mega-menu__list">
+                          <li><a href="#">Hanoi</a></li>
+                          <li><a href="#">Ho Chi Minh City</a></li>
+                          <li><a href="#">Halong Bay</a></li>
+                          <li><a href="#">Da Nang</a></li>
+                          <li><a href="#">Hoi An</a></li>
+                          <li><a href="#">Sapa</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="mega-menu__title">Thailand</h3>
+                        <ul class="mega-menu__list">
+                          <li><a href="#">Bangkok</a></li>
+                          <li><a href="#">Chiang Mai</a></li>
+                          <li><a href="#">Phuket</a></li>
+                          <li><a href="#">Koh Samui</a></li>
+                          <li><a href="#">Krabi</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="mega-menu__title">Japan</h3>
+                        <ul class="mega-menu__list">
+                          <li><a href="#">Tokyo</a></li>
+                          <li><a href="#">Kyoto</a></li>
+                          <li><a href="#">Osaka</a></li>
+                          <li><a href="#">Hokkaido</a></li>
+                          <li><a href="#">Mount Fuji</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="mega-menu__featured">
+                          <img
+                            src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed"
+                            alt="Featured Destination"
+                          />
+                          <div class="mega-menu__caption">
+                            <h4>Best of Southeast Asia</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li><a href="#">BLOG</a></li>
               <li><a href="#">ABOUT US</a></li>
               <li><a href="#">CONTACT US</a></li>
@@ -78,6 +129,64 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__header">
+        <div class="logo">LOGO</div>
+        <div class="mobile-menu__close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li class="has-dropdown">
+          <a href="#">DESTINATIONS</a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Vietnam</a></li>
+              <li><a href="#">Thailand</a></li>
+              <li><a href="#">Laos</a></li>
+              <li><a href="#">Cambodia</a></li>
+              <li><a href="#">Japan</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">PACKAGES</a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Family Tours</a></li>
+              <li><a href="#">Honeymoon Packages</a></li>
+              <li><a href="#">Adventure Tours</a></li>
+              <li><a href="#">Cultural Experiences</a></li>
+              <li><a href="#">Beach Holidays</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <ul class="mobile-menu__contact">
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:test@gmail.com">test@gmail.com</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+84-1234-678-090">+84-1234-678-090</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="hero" class="position-relative">
