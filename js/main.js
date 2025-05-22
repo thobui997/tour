@@ -17,6 +17,42 @@ $(document).ready(function () {
     }
   });
 
+  // Sticky header functionality
+  const header = $("#header");
+  const headerHeight = header.outerHeight();
+  let lastScrollTop = 0;
+  let stickyOffset = 100; // Start sticky behavior after scrolling 100px
+
+  function handleStickyHeader() {
+    const scrollTop = $(window).scrollTop();
+
+    if (scrollTop > stickyOffset) {
+      if (!header.hasClass("sticky-header")) {
+        header.addClass("sticky-header");
+        $("body").addClass("has-sticky-header").css("padding-top", headerHeight + "px");
+      }
+    } else {
+      header.removeClass("sticky-header");
+      $("body").removeClass("has-sticky-header").css("padding-top", 0);
+    }
+
+    lastScrollTop = scrollTop;
+  }
+
+  // Initialize on page load
+  handleStickyHeader();
+
+  // Check on scroll
+  $(window).on("scroll", handleStickyHeader);
+
+  // Recalculate on window resize
+  $(window).on("resize", function () {
+    const newHeaderHeight = header.outerHeight();
+    if (header.hasClass("sticky-header")) {
+      $("body").css("padding-top", newHeaderHeight + "px");
+    }
+  });
+
   // Toggle mega menu on hover for desktop
   $(".has-mega-menu").hover(
     function () {
