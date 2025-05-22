@@ -29,7 +29,9 @@ $(document).ready(function () {
     if (scrollTop > stickyOffset) {
       if (!header.hasClass("sticky-header")) {
         header.addClass("sticky-header");
-        $("body").addClass("has-sticky-header").css("padding-top", headerHeight + "px");
+        $("body")
+          .addClass("has-sticky-header")
+          .css("padding-top", headerHeight + "px");
       }
     } else {
       header.removeClass("sticky-header");
@@ -69,9 +71,65 @@ $(document).ready(function () {
     $(this).next(".dropdown-content").slideToggle();
     $(this).parent().toggleClass("open");
   });
-
   // Set current year in footer
   $("#current-year").text(new Date().getFullYear());
+
+  // Contact Form Validation
+  if ($("#contactForm").length > 0) {
+    $("#contactForm").on("submit", function (e) {
+      e.preventDefault();
+
+      // Basic form validation
+      let isValid = true;
+      const form = $(this);
+
+      // Check required fields
+      form.find("[required]").each(function () {
+        if (!$(this).val()) {
+          isValid = false;
+          $(this).addClass("is-invalid");
+        } else {
+          $(this).removeClass("is-invalid");
+        }
+      });
+
+      // Email validation
+      const emailInput = form.find("#email");
+      if (emailInput.length && emailInput.val()) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.val())) {
+          isValid = false;
+          emailInput.addClass("is-invalid");
+        }
+      }
+
+      // If valid, simulate form submission
+      if (isValid) {
+        // In a real application, you'd use AJAX to submit the form
+        // For demonstration purposes, we'll just show a success message
+        form
+          .find(".btn-primary")
+          .prop("disabled", true)
+          .html(
+            '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...'
+          );
+
+        // Simulate API call
+        setTimeout(function () {
+          form.html(
+            '<div class="text-center py-5"><div class="mb-4"><i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i></div><h3>Thank You!</h3><p class="lead mb-4">Your message has been sent successfully. One of our travel experts will contact you shortly.</p></div>'
+          );
+        }, 2000);
+      }
+    });
+
+    // Remove invalid state on input change
+    $("#contactForm")
+      .find("input, textarea, select")
+      .on("input change", function () {
+        $(this).removeClass("is-invalid");
+      });
+  }
 
   $(".home__shop-list").slick({
     slidesToShow: 4,
