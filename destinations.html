@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en">  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LuxTravel DMC | Luxury Travel Experiences</title>
@@ -20,13 +19,14 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/destinations.css" />
   </head>
-  <body>
-    <!-- Header -->
-    <header id="header">
+  <body>    <!-- Header -->
+    <header id="header" data-aos="fade-down" data-aos-duration="800">
       <div class="header__top">
         <div class="header__top-content">
           <div class="left">
@@ -49,14 +49,14 @@
             </div>
           </div>
 
-          <div class="mid">LOGO</div>
+          <div class="mid" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">LOGO</div>
 
           <div class="right">
             <a href="#" class="header__btn-search d-lg-none">
               <i class="bi bi-search"></i>
             </a>
 
-            <div class="d-none d-lg-block">
+            <div class="d-none d-lg-block" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
               <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
             </div>
           </div>
@@ -64,7 +64,7 @@
       </div>
       <div class="header__bot d-none d-lg-block">
         <div class="container">
-          <nav class="d-flex justify-content-center align-items-center">
+          <nav class="d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
             <div class="header__bot-logo d-none">LOGO</div>
             <ul
               class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
@@ -130,36 +130,34 @@
           </nav>
         </div>
       </div>
-    </header>
-
-    <!-- Mobile Menu -->
+    </header>    <!-- Mobile Menu -->
     <div class="mobile-menu">
       <div class="mobile-menu__header">
-        <div class="logo">LOGO</div>
-        <div class="mobile-menu__close">
+        <div class="logo" data-aos="fade-right" data-aos-duration="800">LOGO</div>
+        <div class="mobile-menu__close" data-aos="fade-left" data-aos-duration="800">
           <i class="bi bi-x-lg"></i>
         </div>
       </div>
       <ul class="mobile-menu__list">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li class="has-dropdown">
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"><a href="index.html" class="active">HOME</a></li>
+        <li class="has-dropdown" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
           <a href="#">PACKAGES</a>
           <div class="dropdown-content">
             <ul>
-              <li><a href="tour-detail.html">Vietnam</a></li>
-              <li><a href="tour-detail.html">Thailand</a></li>
-              <li><a href="tour-detail.html">Laos</a></li>
-              <li><a href="tour-detail.html">Cambodia</a></li>
-              <li><a href="tour-detail.html">Japan</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100"><a href="tour-detail.html">Vietnam</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"><a href="tour-detail.html">Thailand</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"><a href="tour-detail.html">Laos</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"><a href="tour-detail.html">Cambodia</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"><a href="tour-detail.html">Japan</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"><a href="#">BLOG</a></li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="400"><a href="about.html">ABOUT US</a></li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="500"><a href="contact.html">CONTACT US</a></li>
       </ul>
       <div class="mobile-menu__footer">
-        <ul class="mobile-menu__contact">
+        <ul class="mobile-menu__contact" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
           <li>
             <i class="bi bi-envelope"></i>
             <a href="mailto:test@gmail.com">test@gmail.com</a>
@@ -169,32 +167,29 @@
             <a href="tel:+84-1234-678-090">+84-1234-678-090</a>
           </li>
         </ul>
-        <div class="mobile-menu__social">
+        <div class="mobile-menu__social" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
           <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-    </div>
-
-    <!-- Hero Section -->
+    </div>    <!-- Hero Section -->
     <section id="hero" class="position-relative">
       <div
         class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
       >
-        <h1>Vietnam</h1>
-        <h2>Sensing the Timeless Charm of Vietnam</h2>
+        <h1 data-aos="zoom-in" data-aos-duration="1200">Vietnam</h1>
+        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Sensing the Timeless Charm of Vietnam</h2>
       </div>
     </section>
 
     <!-- main -->
-    <main id="main">
-      <!-- destiny -->
+    <main id="main">      <!-- destiny -->
       <section class="destiny">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
               <div class="destiny-content">
                 <h3 class="text-center">Discover the Beauty of Vietnam</h3>
                 <p>
@@ -316,7 +311,7 @@
           </div>
 
           <div class="row gy-3">
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div class="tour-item">
                 <figure class="tour-item__img">
                   <a href="tour-detail.html">
@@ -339,7 +334,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <div class="tour-item">
                 <figure class="tour-item__img">
                   <a href="tour-detail.html">
@@ -362,7 +357,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
               <div class="tour-item">
                 <figure class="tour-item__img">
                   <a href="tour-detail.html">
@@ -385,7 +380,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div class="tour-item">
                 <figure class="tour-item__img">
                   <a href="tour-detail.html">
@@ -408,7 +403,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <div class="tour-item">
                 <figure class="tour-item__img">
                   <a href="tour-detail.html">
@@ -437,9 +432,9 @@
       <!-- guide -->
       <section class="guide">
         <div class="container">
-          <h3 class="text-center mb-3">Travel Guide</h3>
+          <h3 class="text-center mb-3" data-aos="fade-up" data-aos-duration="1000">Travel Guide</h3>
           <div class="row gy-4">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
               <div class="accordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
@@ -534,7 +529,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
               <div class="expert-profile">
                 <div class="text-center expert-content mb-4">
                   <h4 class="title">Meet our Expert</h4>
@@ -571,10 +566,10 @@
       <!-- best destination -->
       <section class="best-destinations">
         <div class="container">
-          <h3 class="text-center mb-4">Best destinations in Vietnam</h3>
+          <h3 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1000">Best destinations in Vietnam</h3>
 
           <div class="destination-list">
-            <div class="destination-item">
+            <div class="destination-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
               <div class="img">
                 <a href="#">
                   <img
@@ -586,7 +581,7 @@
               <div class="brief"><a href="#">Hanoi</a></div>
             </div>
 
-            <div class="destination-item">
+            <div class="destination-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               <div class="img">
                 <a href="#">
                   <img
@@ -598,7 +593,7 @@
               <div class="brief"><a href="#">Saigon</a></div>
             </div>
 
-            <div class="destination-item">
+            <div class="destination-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               <div class="img">
                 <a href="#">
                   <img
@@ -610,7 +605,7 @@
               <div class="brief"><a href="#">Danang</a></div>
             </div>
 
-            <div class="destination-item">
+            <div class="destination-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
               <div class="img">
                 <a href="#">
                   <img
@@ -622,7 +617,7 @@
               <div class="brief"><a href="#">Nhatrang</a></div>
             </div>
 
-            <div class="destination-item">
+            <div class="destination-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
               <div class="img">
                 <a href="#">
                   <img
@@ -639,12 +634,12 @@
 
       <!-- tour banner -->
       <section class="tour-banner">
-        <div class="tour-banner-content">
+        <div class="tour-banner-content" data-aos="zoom-in" data-aos-duration="1200">
           <h3>
             We know you are unique, so we're here to create unique experiences
             for you
           </h3>
-          <a class="btn btn-warning btn-lg" href="#">MAKE AN ENQUIRY</a>
+          <a class="btn btn-warning btn-lg" href="#" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">MAKE AN ENQUIRY</a>
         </div>
       </section>
     </main>
@@ -770,8 +765,19 @@
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <!-- Custom JS -->
+    ></script>    <!-- Custom JS -->
     <script src="js/main.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        easing: 'ease', // default easing for AOS animations
+        offset: 120 // offset (in px) from the original trigger point
+      });
+    </script>
   </body>
 </html>

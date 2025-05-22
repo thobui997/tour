@@ -20,13 +20,15 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-aos="fade-down" data-aos-duration="800">
       <div class="header__top">
         <div class="header__top-content">
           <div class="left">
@@ -49,14 +51,14 @@
             </div>
           </div>
 
-          <div class="mid">LOGO</div>
+          <div class="mid" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">LOGO</div>
 
           <div class="right">
             <a href="#" class="header__btn-search d-lg-none">
               <i class="bi bi-search"></i>
             </a>
 
-            <div class="d-none d-lg-block">
+            <div class="d-none d-lg-block" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
               <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
             </div>
           </div>
@@ -64,7 +66,7 @@
       </div>
       <div class="header__bot d-none d-lg-block">
         <div class="container">
-          <nav class="d-flex justify-content-center align-items-center">
+          <nav class="d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
             <div class="header__bot-logo d-none">LOGO</div>
             <ul
               class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
@@ -135,31 +137,31 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
       <div class="mobile-menu__header">
-        <div class="logo">LOGO</div>
-        <div class="mobile-menu__close">
+        <div class="logo" data-aos="fade-right" data-aos-duration="800">LOGO</div>
+        <div class="mobile-menu__close" data-aos="fade-left" data-aos-duration="800">
           <i class="bi bi-x-lg"></i>
         </div>
       </div>
       <ul class="mobile-menu__list">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li class="has-dropdown">
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"><a href="index.html" class="active">HOME</a></li>
+        <li class="has-dropdown" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
           <a href="#">PACKAGES</a>
           <div class="dropdown-content">
             <ul>
-              <li><a href="tour-detail.html">Vietnam</a></li>
-              <li><a href="tour-detail.html">Thailand</a></li>
-              <li><a href="tour-detail.html">Laos</a></li>
-              <li><a href="tour-detail.html">Cambodia</a></li>
-              <li><a href="tour-detail.html">Japan</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100"><a href="tour-detail.html">Vietnam</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"><a href="tour-detail.html">Thailand</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"><a href="tour-detail.html">Laos</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"><a href="tour-detail.html">Cambodia</a></li>
+              <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"><a href="tour-detail.html">Japan</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"><a href="#">BLOG</a></li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="400"><a href="about.html">ABOUT US</a></li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="500"><a href="contact.html">CONTACT US</a></li>
       </ul>
       <div class="mobile-menu__footer">
-        <ul class="mobile-menu__contact">
+        <ul class="mobile-menu__contact" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
           <li>
             <i class="bi bi-envelope"></i>
             <a href="mailto:test@gmail.com">test@gmail.com</a>
@@ -169,7 +171,7 @@
             <a href="tel:+84-1234-678-090">+84-1234-678-090</a>
           </li>
         </ul>
-        <div class="mobile-menu__social">
+        <div class="mobile-menu__social" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
@@ -183,10 +185,10 @@
       <div
         class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
       >
-        <h2>Luxury Tailor-Made Tours to</h2>
-        <h1>Southeast Asia</h1>
+        <h2 data-aos="zoom-in" data-aos-duration="1200">Luxury Tailor-Made Tours to</h2>
+        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Southeast Asia</h1>
       </div>
-      <div class="d-lg-none position-absolute hero__hotline">
+      <div class="d-lg-none position-absolute hero__hotline" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
         <div class="d-flex gap-5 align-items-center">
           <div class="hero__text">
             <i class="bi bi-telephone-fill"></i>
@@ -206,7 +208,7 @@
       <section class="about-section section-padding">
         <div class="container">
           <div class="row justify-content-center mb-5">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="section-title">Who We Are</h2>
               <div class="section-divider"></div>
               <p class="section-subtitle">
@@ -216,14 +218,14 @@
           </div>
 
           <div class="row align-items-center mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
               <img
                 src="images/shutterstock_11.jpg"
                 alt="Luxury Travel Experience"
                 class="img-fluid rounded shadow"
               />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
               <h3 class="mb-4">We are not a tour guide, we create unique experiences</h3>
               <p>
                 LuxTravel DMC was founded with a passion for creating extraordinary
@@ -248,14 +250,14 @@
       <section class="features-section section-padding bg-light">
         <div class="container">
           <div class="row justify-content-center mb-5">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="section-title">Why Choose Us?</h2>
               <div class="section-divider"></div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div class="feature-card h-100">
                 <div class="feature-icon mb-4">
                   <i class="bi bi-award"></i>
@@ -271,7 +273,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <div class="feature-card h-100">
                 <div class="feature-icon mb-4">
                   <i class="bi bi-people"></i>
@@ -286,7 +288,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
               <div class="feature-card h-100">
                 <div class="feature-icon mb-4">
                   <i class="bi bi-gem"></i>
@@ -308,14 +310,14 @@
       <section class="ceo-message-section section-padding">
         <div class="container">
           <div class="row justify-content-center mb-5">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="section-title">Creating Authentic Experiences For Discerning Travelers</h2>
               <div class="section-divider"></div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-10 mx-auto" data-aos="zoom-in" data-aos-duration="1200">
               <div class="message-card p-5 shadow-sm">
                 <h3 class="mb-4">Xin chào and welcome to LuxTravel DMC!</h3>
                 <p class="mb-4">
@@ -356,7 +358,7 @@
       <section class="team-section section-padding bg-light">
         <div class="container">
           <div class="row justify-content-center mb-5">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="section-title">Meet Our Team</h2>
               <div class="section-divider"></div>
               <p class="section-subtitle">
@@ -369,7 +371,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div class="team-card h-100">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
@@ -389,7 +391,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <div class="team-card h-100">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
@@ -409,7 +411,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
               <div class="team-card h-100">
                 <img
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
@@ -430,7 +432,7 @@
           </div>
 
           <div class="row mt-4">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
               <a href="contact.html" class="btn btn-warning btn-lg">TRAVEL WITH US NOW</a>
             </div>
           </div>
@@ -441,7 +443,7 @@
       <section class="contact-info-section section-padding">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
               <div class="contact-card text-center h-100">
                 <div class="contact-icon mb-3">
                   <i class="bi bi-telephone"></i>
@@ -453,7 +455,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="contact-card text-center h-100">
                 <div class="contact-icon mb-3">
                   <i class="bi bi-envelope"></i>
@@ -465,7 +467,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
               <div class="contact-card text-center h-100">
                 <div class="contact-icon mb-3">
                   <i class="bi bi-chat-dots"></i>
@@ -486,7 +488,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
+            <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-right" data-aos-duration="1000">
               <h3>LuxTravel DMC</h3>
               <p>
                 1234 Luxury Avenue <br />
@@ -498,7 +500,7 @@
               </p>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
+            <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -524,7 +526,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
+            <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -554,7 +556,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-newsletter">
+            <div class="col-lg-3 col-md-6 footer-newsletter" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
               <h4>Join Our Newsletter</h4>
               <p>
                 Subscribe to receive exclusive offers and travel inspiration
@@ -568,7 +570,7 @@
         </div>
       </div>
 
-      <div class="container d-md-flex py-4">
+      <div class="container d-md-flex py-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
             &copy; <span id="current-year"></span>
@@ -605,5 +607,17 @@
     ></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        easing: 'ease', // default easing for AOS animations
+        offset: 120 // offset (in px) from the original trigger point
+      });
+    </script>
   </body>
 </html>
