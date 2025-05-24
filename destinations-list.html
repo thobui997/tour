@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxTravel DMC | Luxury Travel Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS for Testimonial Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/destinations-list.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" data-aos="fade-down" data-aos-duration="800">
+      <div class="header__top">
+        <div class="header__top-content">
+          <div class="left">
+            <a href="#" class="header__btn-menu d-lg-none">
+              <i class="bi bi-list"></i>
+            </a>
+            <div class="d-none d-lg-block">
+              <ul
+                class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
+              >
+                <li>
+                  <i class="bi bi-envelope"></i>
+                  <a href="mailto:test@gmail.com">test@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mid"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            LOGO
+          </div>
+
+          <div class="right">
+            <div
+              class="d-none d-lg-block"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bot d-none d-lg-block">
+        <div class="container">
+          <nav
+            class="d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <div class="header__bot-logo d-none">LOGO</div>
+            <ul
+              class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
+            >
+              <li><a href="index.html" class="active">HOME</a></li>
+              <li class="has-mega-menu">
+                <a href="destinations-list.html">PACKAGES</a>
+              </li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__header">
+        <div class="logo" data-aos="fade-right" data-aos-duration="800">
+          LOGO
+        </div>
+        <div
+          class="mobile-menu__close"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <ul class="mobile-menu__list">
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+          <a href="index.html" class="active">HOME</a>
+        </li>
+        <li
+          class="has-dropdown"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <a href="destinations-list.html">PACKAGES</a>
+        </li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+          <a href="#">BLOG</a>
+        </li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+          <a href="about.html">ABOUT US</a>
+        </li>
+        <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+          <a href="contact.html">CONTACT US</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <ul
+          class="mobile-menu__contact"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="600"
+        >
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:test@gmail.com">test@gmail.com</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+84-1234-678-090">+84-1234-678-090</a>
+          </li>
+        </ul>
+        <div
+          class="mobile-menu__social"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="700"
+        >
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="position-relative">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column h-100 hero__content"
+      >
+        <h1 data-aos="zoom-in" data-aos-duration="1200">Vietnam</h1>
+        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+          Sensing the Timeless Charm of Vietnam
+        </h2>
+      </div>
+    </section>
+    <!-- main -->
+    <main id="main">
+      <!-- Destinations Section -->
+      <section class="destinations py-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2
+                class="section-title"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                Popular Destinations
+              </h2>
+              <p
+                class="section-subtitle"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                Discover our handpicked selection of the most captivating
+                destinations across Asia
+              </p>
+            </div>
+          </div>
+
+          <!-- Destination Filters -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <div
+                class="destination-filters d-flex flex-wrap justify-content-center gap-2"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <button class="btn btn-outline-dark active">All</button>
+                <button class="btn btn-outline-dark">Vietnam</button>
+                <button class="btn btn-outline-dark">Thailand</button>
+                <button class="btn btn-outline-dark">Japan</button>
+                <button class="btn btn-outline-dark">Cambodia</button>
+                <button class="btn btn-outline-dark">Laos</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination Grid -->
+          <div class="row g-4">
+            <!-- Destination Card 1 - Vietnam -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <div class="tour-item h-100">
+                <div class="tour-item__img">
+                  <img src="images/vietnam-01.png" alt="Ha Long Bay, Vietnam" />
+                  <div class="destination-badge">Vietnam</div>
+                </div>
+                <div class="tour-item__content">
+                  <h4 class="desc mb-3">Ha Long Bay</h4>
+                  <p class="mb-3">
+                    Explore the emerald waters and thousands of towering
+                    limestone islands topped with rainforests. A UNESCO World
+                    Heritage Site and natural wonder.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="destinations-detail.html" class="btn btn-warning"
+                      >View Details</a
+                    >
+                    <div class="tour-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination Card 2 - Thailand -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <div class="tour-item h-100">
+                <div class="tour-item__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Bangkok, Thailand"
+                  />
+                  <div class="destination-badge">Thailand</div>
+                </div>
+                <div class="tour-item__content">
+                  <h4 class="desc mb-3">Bangkok</h4>
+                  <p class="mb-3">
+                    Experience the vibrant street life, ornate shrines, and a
+                    perfect blend of tradition and modernity in Thailand's
+                    bustling capital city.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="destinations-detail.html" class="btn btn-warning"
+                      >View Details</a
+                    >
+                    <div class="tour-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination Card 3 - Japan -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              <div class="tour-item h-100">
+                <div class="tour-item__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Tokyo, Japan"
+                  />
+                  <div class="destination-badge">Japan</div>
+                </div>
+                <div class="tour-item__content">
+                  <h4 class="desc mb-3">Tokyo</h4>
+                  <p class="mb-3">
+                    Discover the ultramodern and traditional sides of Japan's
+                    busy capital, with its neon-lit skyscrapers, historic
+                    temples, and endless shopping districts.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="destinations-detail.html" class="btn btn-warning"
+                      >View Details</a
+                    >
+                    <div class="tour-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination Card 4 - Cambodia -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
+              <div class="tour-item h-100">
+                <div class="tour-item__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Angkor Wat, Cambodia"
+                  />
+                  <div class="destination-badge">Cambodia</div>
+                </div>
+                <div class="tour-item__content">
+                  <h4 class="desc mb-3">Angkor Wat</h4>
+                  <p class="mb-3">
+                    Visit the largest religious monument in the world, an
+                    architectural masterpiece with its five lotus-like towers
+                    and stunning bas-reliefs.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="destinations-detail.html" class="btn btn-warning"
+                      >View Details</a
+                    >
+                    <div class="tour-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination Card 5 - Vietnam -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="500"
+            >
+              <div class="tour-item h-100">
+                <div class="tour-item__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1540308990836-6956b84d0f57?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Hoi An, Vietnam"
+                  />
+                  <div class="destination-badge">Vietnam</div>
+                </div>
+                <div class="tour-item__content">
+                  <h4 class="desc mb-3">Hoi An</h4>
+                  <p class="mb-3">
+                    Wander through the well-preserved Ancient Town, a UNESCO
+                    site known for its colorful lanterns, tailors, and mix of
+                    architectural influences.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="destinations-detail.html" class="btn btn-warning"
+                      >View Details</a
+                    >
+                    <div class="tour-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination Card 6 - Laos -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="600"
+            >
+              <div class="tour-item h-100">
+                <div class="tour-item__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Luang Prabang, Laos"
+                  />
+                  <div class="destination-badge">Laos</div>
+                </div>
+                <div class="tour-item__content">
+                  <h4 class="desc mb-3">Luang Prabang</h4>
+                  <p class="mb-3">
+                    Experience the serene UNESCO town with its golden temples,
+                    French colonial architecture, and the magical morning
+                    alms-giving ceremony.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="destinations-detail.html" class="btn btn-warning"
+                      >View Details</a
+                    >
+                    <div class="tour-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="row mt-5">
+            <div class="col-12">
+              <nav aria-label="Destination pagination">
+                <ul
+                  class="pagination justify-content-center"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="700"
+                >
+                  <li class="page-item disabled">
+                    <a
+                      class="page-link"
+                      href="#"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      >Previous</a
+                    >
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Destinations -->
+      <section class="featured-destinations py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2
+                class="section-title"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                Featured Experiences
+              </h2>
+              <p
+                class="section-subtitle"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                Unique cultural journeys and unforgettable adventures
+              </p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <!-- Featured Experience 1 -->
+            <div
+              class="col-md-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div
+                class="featured-card position-relative overflow-hidden rounded"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1575999502951-4ab25b5ca889?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  alt="Cultural Tours"
+                  class="w-100"
+                />
+                <div
+                  class="featured-overlay d-flex flex-column justify-content-end p-4"
+                >
+                  <h3 class="text-white mb-2">Cultural Tours</h3>
+                  <p class="text-white mb-3">
+                    Immerse yourself in authentic local traditions and heritage
+                  </p>
+                  <a href="destinations-detail.html" class="btn btn-light"
+                    >Explore Cultural Tours</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Featured Experience 2 -->
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+              <div
+                class="featured-card position-relative overflow-hidden rounded"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  alt="Adventure Tours"
+                  class="w-100"
+                />
+                <div
+                  class="featured-overlay d-flex flex-column justify-content-end p-4"
+                >
+                  <h3 class="text-white mb-2">Adventure Tours</h3>
+                  <p class="text-white mb-3">
+                    Thrilling experiences for those seeking excitement and
+                    challenge
+                  </p>
+                  <a href="destinations-detail.html" class="btn btn-light"
+                    >Discover Adventures</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div
+                class="newsletter-content p-4 rounded"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+              >
+                <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+                <p class="mb-4">
+                  Stay updated with our latest travel deals, new destinations,
+                  and insider tips
+                </p>
+                <form
+                  class="newsletter-form d-flex flex-column flex-md-row gap-2"
+                >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button type="submit" class="btn btn-warning">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-4 col-md-6 footer-contact"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <h3>LuxTravel DMC</h3>
+              <p>
+                1234 Luxury Avenue <br />
+                Suite 500<br />
+                New York, NY 10001 <br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 (555) 123-4567<br />
+                <strong>Email:</strong> info@luxtraveldmc.com<br />
+              </p>
+            </div>
+
+            <div
+              class="col-12 col-lg-4 col-md-6 footer-links"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="about.html">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-12 col-lg-4 col-md-6 footer-links"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#bespoke">Bespoke Itineraries</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#accommodations"
+                    >Luxury Accommodations</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#experiences">VIP Experiences</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#transportation"
+                    >Transportation Services</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#concierge">24/7 Concierge</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+        <div
+          class="me-md-auto text-center text-md-start"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="copyright">
+            &copy; <span id="current-year"></span>
+            <strong><span>LuxTravel DMC</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+        <div
+          class="social-links text-center text-md-right pt-3 pt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS for Testimonial Carousel -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slick library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        easing: "ease", // default easing for AOS animations
+        offset: 120, // offset (in px) from the original trigger point
+      });
+    </script>
+  </body>
+</html>

@@ -373,19 +373,6 @@ ul {
   color: var(--primary-color);
 }
 
-.mobile-menu__list li.has-dropdown > a:after {
-  content: "\F282";
-  font-family: "bootstrap-icons";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease;
-}
-
-.mobile-menu__list li.has-dropdown.open > a:after {
-  transform: translateY(-50%) rotate(180deg);
-}
 
 .dropdown-content {
   display: none;

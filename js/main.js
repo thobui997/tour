@@ -256,4 +256,31 @@ $(document).ready(function () {
       }
     );
   });
+
+  // Destinations filter functionality
+  if ($(".destination-filters").length > 0) {
+    $(".destination-filters .btn").on("click", function () {
+      // Remove active class from all buttons
+      $(".destination-filters .btn").removeClass("active");
+
+      // Add active class to clicked button
+      $(this).addClass("active");
+
+      const filter = $(this).text().toLowerCase();
+
+      if (filter === "all") {
+        // Show all destination cards
+        $(".tour-item").parent().show();
+      } else {
+        // Hide all destination cards
+        $(".tour-item").parent().hide();
+
+        // Show only cards with matching destination badge
+        $(`.tour-item .destination-badge:contains(${filter})`)
+          .closest(".tour-item")
+          .parent()
+          .show();
+      }
+    });
+  }
 });
