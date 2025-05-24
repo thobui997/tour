@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxTravel DMC | Luxury Travel Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS for Testimonial Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/blog-list.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header__top" data-aos="fade-down" data-aos-duration="800">
+        <div class="header__top-content">
+          <div class="left">
+            <a href="#" class="header__btn-menu d-lg-none">
+              <i class="bi bi-list"></i>
+            </a>
+            <div class="d-none d-lg-block">
+              <ul
+                class="d-flex align-items-center list-unstyled gap-3 mb-0 header__list"
+              >
+                <li>
+                  <i class="bi bi-envelope"></i>
+                  <a href="mailto:test@gmail.com">test@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a href="tel:+84-1234-678-090">Call us: +84-1234-678-090</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mid"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            LOGO
+          </div>
+
+          <div class="right">
+            <div
+              class="d-none d-lg-block"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <a href="#" class="btn btn-warning btn-lg">BOOKING NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="header__bot d-none d-lg-block"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+      >
+        <div class="container">
+          <nav class="d-flex justify-content-center align-items-center">
+            <div class="header__bot-logo d-none">LOGO</div>
+            <ul
+              class="list-unstyled d-flex align-items-center gap-5 mb-0 header__bot-menu"
+            >
+              <li><a href="index.html" class="active">HOME</a></li>
+              <li class="has-mega-menu">
+                <a href="destinations-list.html">PACKAGES</a>
+              </li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__header">
+        <div class="logo" data-aos="fade-right">LOGO</div>
+        <div class="mobile-menu__close" data-aos="fade-left">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <ul class="mobile-menu__list">
+        <li data-aos="fade-right" data-aos-delay="100">
+          <a href="index.html" class="active">HOME</a>
+        </li>
+        <li class="has-dropdown" data-aos="fade-right" data-aos-delay="150">
+          <a href="#">PACKAGES</a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="200"><a href="#">BLOG</a></li>
+        <li data-aos="fade-right" data-aos-delay="250">
+          <a href="about.html">ABOUT US</a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="300">
+          <a href="contact.html">CONTACT US</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <ul class="mobile-menu__contact">
+          <li data-aos="fade-up" data-aos-delay="350">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:test@gmail.com">test@gmail.com</a>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+84-1234-678-090">+84-1234-678-090</a>
+          </li>
+        </ul>
+        <div
+          class="mobile-menu__social"
+          data-aos="fade-up"
+          data-aos-delay="450"
+        >
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <main id="main">
+      <!-- Blog Banner Section -->
+      <section class="blog-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+              <h1 class="display-4 fw-bold">Our Travel Blog</h1>
+              <p class="lead">
+                Discover travel insights, tips, and inspiration for your next luxury
+                adventure
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Content Section -->
+      <section class="blog-content py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Blog Main Content -->
+            <div class="col-lg-8">
+              <!-- Blog Post Grid -->
+              <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <article class="blog-card h-100">
+                    <div class="blog-card-img">
+                      <img
+                        src="images/vietnam-01.png"
+                        alt="Luxury Travel in Vietnam"
+                        class="img-fluid rounded"
+                      />
+                    </div>
+                    <div class="blog-card-body p-4">
+                      <div class="blog-meta mb-2">
+                        <span class="blog-date"
+                          ><i class="bi bi-calendar3"></i> May 20, 2025</span
+                        >
+                        <span class="blog-author ms-3"
+                          ><i class="bi bi-person"></i> By James Wilson</span
+                        >
+                      </div>
+                      <h3 class="blog-title h5">
+                        <a href="blog-detail.html"
+                          >The Ultimate Guide to Luxury Travel in Vietnam</a
+                        >
+                      </h3>                      <p class="blog-excerpt">
+                        Discover the hidden gems and luxury experiences that make
+                        Vietnam a must-visit destination for discerning travelers
+                        seeking authentic cultural immersion with world-class
+                        comfort.
+                      </p>
+                      <a
+                        href="blog-detail.html"
+                        class="btn btn-warning mt-2"
+                      >
+                        Read More <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                  <article class="blog-card h-100">
+                    <div class="blog-card-img">
+                      <img
+                        src="images/shutterstock_11.jpg"
+                        alt="Bali Luxury Retreats"
+                        class="img-fluid rounded"
+                      />
+                    </div>
+                    <div class="blog-card-body p-4">
+                      <div class="blog-meta mb-2">
+                        <span class="blog-date"
+                          ><i class="bi bi-calendar3"></i> May 15, 2025</span
+                        >
+                        <span class="blog-author ms-3"
+                          ><i class="bi bi-person"></i> By Sophia Chen</span
+                        >
+                      </div>
+                      <h3 class="blog-title h5">
+                        <a href="blog-detail.html"
+                          >Top 10 Luxury Retreats in Bali for Ultimate Relaxation</a
+                        >
+                      </h3>                      <p class="blog-excerpt">
+                        From cliffside villas to secluded jungle resorts, Bali offers
+                        some of the most exclusive accommodations in Southeast Asia.
+                        Explore our curated list of the island's finest retreats.
+                      </p>
+                      <a
+                        href="blog-detail.html"
+                        class="btn btn-warning mt-2"
+                      >
+                        Read More <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <article class="blog-card h-100">
+                    <div class="blog-card-img">
+                      <img
+                        src="images/setdeparture-banner-duoi2.jpg"
+                        alt="Culinary Tours"
+                        class="img-fluid rounded"
+                      />
+                    </div>
+                    <div class="blog-card-body p-4">
+                      <div class="blog-meta mb-2">
+                        <span class="blog-date"
+                          ><i class="bi bi-calendar3"></i> May 10, 2025</span
+                        >
+                        <span class="blog-author ms-3"
+                          ><i class="bi bi-person"></i> By Michael Rodriguez</span
+                        >
+                      </div>
+                      <h3 class="blog-title h5">
+                        <a href="blog-detail.html"
+                          >Culinary Journeys: Michelin-Star Dining Experiences in Asia</a
+                        >
+                      </h3>                      <p class="blog-excerpt">
+                        From Tokyo to Singapore, embark on a gastronomic adventure
+                        through Asia's most acclaimed restaurants. Discover how these
+                        culinary masters blend tradition with innovation.
+                      </p>
+                      <a
+                        href="blog-detail.html"
+                        class="btn btn-warning mt-2"
+                      >
+                        Read More <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                  <article class="blog-card h-100">
+                    <div class="blog-card-img">
+                      <img
+                        src="images/arrow-1.png"
+                        alt="Private Island Experiences"
+                        class="img-fluid rounded"
+                      />
+                    </div>
+                    <div class="blog-card-body p-4">
+                      <div class="blog-meta mb-2">
+                        <span class="blog-date"
+                          ><i class="bi bi-calendar3"></i> May 5, 2025</span
+                        >
+                        <span class="blog-author ms-3"
+                          ><i class="bi bi-person"></i> By Emily Johnson</span
+                        >
+                      </div>
+                      <h3 class="blog-title h5">
+                        <a href="blog-detail.html"
+                          >Private Island Getaways: The Ultimate Luxury Experience</a
+                        >
+                      </h3>                      <p class="blog-excerpt">
+                        Experience the epitome of exclusivity with these handpicked
+                        private island resorts that offer complete privacy,
+                        personalized service, and breathtaking natural beauty.
+                      </p>
+                      <a
+                        href="blog-detail.html"
+                        class="btn btn-warning mt-2"
+                      >
+                        Read More <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <article class="blog-card h-100">
+                    <div class="blog-card-img">
+                      <img
+                        src="images/vietnam-01.png"
+                        alt="Sustainable Luxury Travel"
+                        class="img-fluid rounded"
+                      />
+                    </div>
+                    <div class="blog-card-body p-4">
+                      <div class="blog-meta mb-2">
+                        <span class="blog-date"
+                          ><i class="bi bi-calendar3"></i> April 28, 2025</span
+                        >
+                        <span class="blog-author ms-3"
+                          ><i class="bi bi-person"></i> By David Thompson</span
+                        >
+                      </div>
+                      <h3 class="blog-title h5">
+                        <a href="blog-detail.html"
+                          >Sustainable Luxury: Eco-Friendly Resorts Leading the Way</a
+                        >
+                      </h3>                      <p class="blog-excerpt">
+                        Discover how these pioneering luxury properties are combining
+                        opulent experiences with environmental stewardship, proving that
+                        sustainability and luxury can go hand in hand.
+                      </p>
+                      <a
+                        href="blog-detail.html"
+                        class="btn btn-warning mt-2"
+                      >
+                        Read More <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+                  <article class="blog-card h-100">
+                    <div class="blog-card-img">
+                      <img
+                        src="images/arrow-1-1.png"
+                        alt="Wellness Retreats"
+                        class="img-fluid rounded"
+                      />
+                    </div>
+                    <div class="blog-card-body p-4">
+                      <div class="blog-meta mb-2">
+                        <span class="blog-date"
+                          ><i class="bi bi-calendar3"></i> April 22, 2025</span
+                        >
+                        <span class="blog-author ms-3"
+                          ><i class="bi bi-person"></i> By Olivia Parker</span
+                        >
+                      </div>
+                      <h3 class="blog-title h5">
+                        <a href="blog-detail.html"
+                          >Wellness Retreats: Finding Balance in Luxury Settings</a
+                        >
+                      </h3>                      <p class="blog-excerpt">
+                        From traditional healing therapies to cutting-edge wellness
+                        technologies, these luxury retreats offer transformative
+                        experiences designed to rejuvenate both body and mind.
+                      </p>
+                      <a
+                        href="blog-detail.html"
+                        class="btn btn-warning mt-2"
+                      >
+                        Read More <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>              <!-- Pagination -->
+              <nav class="mt-5" aria-label="Blog pagination" data-aos="fade-up">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                      >Previous</a
+                    >
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 mt-5 mt-lg-0">
+              <aside class="blog-sidebar">
+                <!-- Search Widget -->
+                <div
+                  class="sidebar-widget search-widget mb-4"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
+                  <h4 class="widget-title">Search</h4>
+                  <div class="search-form">
+                    <div class="input-group">                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search posts..."
+                      />
+                      <button class="btn btn-warning" type="button">
+                        <i class="bi bi-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Categories Widget -->
+                <div
+                  class="sidebar-widget categories-widget mb-4"
+                  data-aos="fade-left"
+                  data-aos-delay="150"
+                >
+                  <h4 class="widget-title">Categories</h4>
+                  <ul class="list-unstyled categories-list">
+                    <li>
+                      <a href="#"
+                        >Luxury Travel <span>(12)</span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Culinary Experiences <span>(8)</span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Wellness & Spa <span>(6)</span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Adventure Journeys <span>(9)</span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Cultural Immersion <span>(7)</span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Sustainable Tourism <span>(5)</span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div
+                  class="sidebar-widget recent-posts-widget mb-4"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  <h4 class="widget-title">Recent Posts</h4>
+                  <div class="recent-posts">
+                    <div class="recent-post-item d-flex mb-3">
+                      <div class="recent-post-img me-3">
+                        <img
+                          src="images/vietnam-01.png"
+                          alt="Recent Post"
+                          class="img-fluid rounded"
+                          width="80"
+                        />
+                      </div>
+                      <div class="recent-post-info">
+                        <h6 class="mb-1">
+                          <a href="blog-detail.html"
+                            >The Ultimate Guide to Luxury Travel in Vietnam</a
+                          >
+                        </h6>
+                        <span class="text-muted small">May 20, 2025</span>
+                      </div>
+                    </div>
+                    <div class="recent-post-item d-flex mb-3">
+                      <div class="recent-post-img me-3">
+                        <img
+                          src="images/shutterstock_11.jpg"
+                          alt="Recent Post"
+                          class="img-fluid rounded"
+                          width="80"
+                        />
+                      </div>
+                      <div class="recent-post-info">
+                        <h6 class="mb-1">
+                          <a href="blog-detail.html">Top 10 Luxury Retreats in Bali</a>
+                        </h6>
+                        <span class="text-muted small">May 15, 2025</span>
+                      </div>
+                    </div>
+                    <div class="recent-post-item d-flex">
+                      <div class="recent-post-img me-3">
+                        <img
+                          src="images/setdeparture-banner-duoi2.jpg"
+                          alt="Recent Post"
+                          class="img-fluid rounded"
+                          width="80"
+                        />
+                      </div>
+                      <div class="recent-post-info">
+                        <h6 class="mb-1">
+                          <a href="blog-detail.html"
+                            >Culinary Journeys: Michelin-Star Dining in Asia</a
+                          >
+                        </h6>
+                        <span class="text-muted small">May 10, 2025</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tags Widget -->
+                <div
+                  class="sidebar-widget tags-widget"
+                  data-aos="fade-left"
+                  data-aos-delay="250"
+                >
+                  <h4 class="widget-title">Popular Tags</h4>
+                  <div class="tags">
+                    <a href="#" class="tag">Luxury</a>
+                    <a href="#" class="tag">Travel</a>
+                    <a href="#" class="tag">Experiences</a>
+                    <a href="#" class="tag">Food</a>
+                    <a href="#" class="tag">Asia</a>
+                    <a href="#" class="tag">Wellness</a>
+                    <a href="#" class="tag">Sustainability</a>
+                    <a href="#" class="tag">Hotels</a>
+                    <a href="#" class="tag">Culture</a>
+                    <a href="#" class="tag">Adventure</a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-4 col-md-6 footer-contact"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <h3>LuxTravel DMC</h3>
+              <p>
+                1234 Luxury Avenue <br />
+                Suite 500<br />
+                New York, NY 10001 <br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 (555) 123-4567<br />
+                <strong>Email:</strong> info@luxtraveldmc.com<br />
+              </p>
+            </div>
+
+            <div
+              class="col-12 col-lg-4 col-md-6 footer-links"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="about.html">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-12 col-lg-4 col-md-6 footer-links"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#bespoke">Bespoke Itineraries</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#accommodations"
+                    >Luxury Accommodations</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#experiences">VIP Experiences</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#transportation"
+                    >Transportation Services</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="services.html#concierge">24/7 Concierge</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+        <div
+          class="me-md-auto text-center text-md-start"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="copyright">
+            &copy; <span id="current-year"></span>
+            <strong><span>LuxTravel DMC</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+        <div
+          class="social-links text-center text-md-right pt-3 pt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS for Testimonial Carousel -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slick library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        easing: "ease", // default easing for AOS animations
+        offset: 120, // offset (in px) from the original trigger point
+      });
+    </script>
+  </body>
+</html>

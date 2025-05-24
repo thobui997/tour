@@ -63,6 +63,24 @@ ul {
   margin: 0;
 }
 
+/* Global Button Styles */
+.btn-warning {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--dark-text-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover, 
+.btn-warning:focus, 
+.btn-warning:active {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  color: var(--dark-text-color);
+  transform: translateY(-2px);
+}
+
 .accordion {
   --bs-accordion-active-color: var(--dark-text-color);
   --bs-accordion-active-bg: var(--primary-color);
